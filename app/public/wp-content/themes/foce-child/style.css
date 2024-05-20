@@ -1,12 +1,15 @@
-.parallax {
-  position: relative;
-  overflow: hidden;
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-
-.banner {
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
+.logo-img {
+  animation: fadeInUp 3000ms linear forwards;
 }
 
 /*# sourceMappingURL=style.css.map */
