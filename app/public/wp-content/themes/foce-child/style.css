@@ -8,8 +8,21 @@
     transform: translateY(0);
   }
 }
-.logo-img {
-  animation: fadeInUp 3000ms linear forwards;
+.parallax {
+  overflow-x: hidden;
+  overflow-y: auto; /* Enable scrolling */
+  perspective: 1px; /* Create a 3D space */
+}
+.parallax banner {
+  position: relative;
+}
+.parallax logo-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  transition: transform 0.1s ease-out;
 }
 
 /*# sourceMappingURL=style.css.map */

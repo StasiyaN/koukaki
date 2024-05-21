@@ -1,38 +1,40 @@
+@import 'variables';
+
 @keyframes fadeInUp {
   0% {
     opacity: 0;
     transform: translateY(200px);
-
   }
-
   100% {
     opacity: 1;
     transform: translateY(0);
-
   }
-  
 }
 
 
 
+//PARALLAX BANNER
+.parallax {
+  overflow-x: hidden;
+  overflow-y: auto; /* Enable scrolling */
+  perspective: 1px; /* Create a 3D space */
+
+  banner {
+    position: relative;
+  }
+
+  logo-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    transition: transform 0.1s ease-out;
+
+}
+  }
 
 
-// .parallax {
-//   position: relative;
-//   overflow: hidden;
-// }
 
-// .banner {
-//   background-size: cover;
-//   background-position: center;
-//   z-index: -1;
-// }
 
-  .logo-img {
-    animation: fadeInUp 3000ms linear forwards;
-    }
-    
   
-
-
-
