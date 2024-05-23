@@ -1,28 +1,25 @@
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(200px);
+    transform: translateY(0, 200px, 0);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0, 0, 0);
   }
 }
-.parallax {
-  overflow-x: hidden;
-  overflow-y: auto; /* Enable scrolling */
-  perspective: 1px; /* Create a 3D space */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(0, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0, 200px, 0);
+  }
 }
-.parallax banner {
-  position: relative;
-}
-.parallax logo-img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 200px;
-  transition: transform 0.1s ease-out;
+.fadeInUp {
+  animation: fadeInUp 1000ms linear forwards;
 }
 
 /*# sourceMappingURL=style.css.map */
