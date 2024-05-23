@@ -1,33 +1,63 @@
 @keyframes fadeInUp {
-  0% {
+  from {
     opacity: 0;
     transform: translateY(200px);
   }
-  100% {
+  to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 @keyframes fadeInDown {
-  0% {
+  from {
     opacity: 0;
     transform: translateY(-100px);
   }
-  100% {
+  to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+@keyframes pText {
+  from {
+    opacity: 1;
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 .banner {
-  animation: fadeInDown 1000ms ease-in-out forwards;
+  animation: fadeInDown 1500ms ease-in-out;
 }
 
-.logo-img {
-  animation: fadeInUp 1000ms ease-in-out forwards;
+img {
+  animation: pText 1500ms ease-in-out;
 }
 
-.fadeInUpSection {
-  animation: fadeInUp 1000ms ease-in-out forwards;
+.story {
+  animation: fadeInUp 1500ms ease-in-out;
+}
+.story p {
+  animation: pText 1500ms ease-in-out;
+}
+
+#place {
+  animation: fadeInUp 1500ms ease-in-out;
+}
+#place p {
+  animation: pText 1500ms ease-in-out;
+}
+
+#studio {
+  animation: fadeInUp 1500ms ease-in-out;
+}
+#studio p {
+  animation: pText 1500ms ease-in-out;
+}
+
+#characters {
+  animation: fadeInUp 1500ms ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */

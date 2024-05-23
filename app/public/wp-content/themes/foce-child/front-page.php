@@ -4,6 +4,7 @@ get_header();
 ?>
 
     <main id="primary" class="site-main">
+    <!-- CHANGEMENT SECTION BANNER POUR DIV POUR MIEUX MANIPULER L ANIMATIONS DANS LA SECTION -->
         <div class="banner">
             <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " class="logo-img" alt="logo Fleurs d'oranger & chats errants">
             </div>
