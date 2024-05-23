@@ -3,29 +3,49 @@
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(0, 200px, 0);
+    transform: translateY(200px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0, 0, 0);
+    transform: translateY(0);
   }
 }
+
+
 
 @keyframes fadeInDown {
   0% {
     opacity: 0;
-    transform: translateY(0, 0, 0);
+    transform: translateY(-100px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0, 200px, 0);
+    transform: translateY(0);
   }
 }
+//animation hero
+.banner {
+  animation: $animationDown;
+}
 
-
-.fadeInUp {
+.logo-img {
   animation: $animationUp;
 }
+
+//sections animation
+
+.story, 
+#characters,
+#place,
+#studio {
+  animation: $animationUp;
+}
+  // .story p { 
+  //   animation: $animationText; /* Disable animation for p elements */
+  //   opacity: 1 !important; /* Ensure opacity is set to 1 */
+  //   transform: none !important; /* Reset transform property */
+  // }
+   
 
 
 

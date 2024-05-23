@@ -1,2 +1,3 @@
-$animationUp: fadeInUp 1000ms linear forwards;
-$animationDown: fadeInDown 1000ms linear forwards;
+$animationUp: fadeInUp 1000ms ease-in-out forwards;
+$animationDown: fadeInDown 1000ms ease-in-out forwards;
+$animationText: pText 1000ms ease-in-out forwards;

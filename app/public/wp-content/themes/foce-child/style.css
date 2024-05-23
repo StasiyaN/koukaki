@@ -1,25 +1,36 @@
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(0, 200px, 0);
+    transform: translateY(200px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0, 0, 0);
+    transform: translateY(0);
   }
 }
 @keyframes fadeInDown {
   0% {
     opacity: 0;
-    transform: translateY(0, 0, 0);
+    transform: translateY(-100px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0, 200px, 0);
+    transform: translateY(0);
   }
 }
-.fadeInUp {
-  animation: fadeInUp 1000ms linear forwards;
+.banner {
+  animation: fadeInDown 1000ms ease-in-out forwards;
+}
+
+.logo-img {
+  animation: fadeInUp 1000ms ease-in-out forwards;
+}
+
+.story,
+#characters,
+#place,
+#studio {
+  animation: fadeInUp 1000ms ease-in-out forwards;
 }
 
 /*# sourceMappingURL=style.css.map */
