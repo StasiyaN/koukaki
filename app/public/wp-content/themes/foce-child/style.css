@@ -26,10 +26,7 @@
   animation: fadeInUp 1000ms ease-in-out forwards;
 }
 
-.story,
-#characters,
-#place,
-#studio {
+.fadeInUpSection {
   animation: fadeInUp 1000ms ease-in-out forwards;
 }
 

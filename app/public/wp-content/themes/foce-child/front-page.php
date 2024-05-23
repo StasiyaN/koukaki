@@ -4,15 +4,13 @@ get_header();
 ?>
 
     <main id="primary" class="site-main">
-        <div class="parallax">
-        <section class="banner">
-            <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt="logo Fleurs d'oranger & chats errants" class="logo-img">
-        </section>
-        </div>
+        <div class="banner">
+            <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " class="logo-img" alt="logo Fleurs d'oranger & chats errants">
+            </div>
         <section id="#story" class="story">
             <h2>L'histoire</h2>
             <article id="" class="story__article">
-                <p class="static"><?php echo get_theme_mod('story'); ?></p>
+                <p><?php echo get_theme_mod('story'); ?></p>
             </article>
             <?php
             $args = array(

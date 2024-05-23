@@ -27,19 +27,25 @@
 .banner {
   animation: $animationDown;
 }
+ img {
+    animation: $animationUp;
 
-.logo-img {
+  }
+
+
+
+.fadeInUpSection {
   animation: $animationUp;
 }
 
 //sections animation
 
-.story, 
-#characters,
-#place,
-#studio {
-  animation: $animationUp;
-}
+// .story, 
+// #characters,
+// #place,
+// #studio {
+//   animation: $animationUp;
+// }
   // .story p { 
   //   animation: $animationText; /* Disable animation for p elements */
   //   opacity: 1 !important; /* Ensure opacity is set to 1 */
