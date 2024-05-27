@@ -102,21 +102,27 @@
   font-weight: 700;
   font-size: 42px;
   line-height: 1.2;
-  background-image: url("http://koukaki.local/wp-content/themes/foce-child/assets/images/oscars-bg-image.png");
+  background-image: url("../foce-child/assets/images/oscars-bg-image.png");
   background-size: 800px 260px;
   letter-spacing: -2%;
   width: 675px;
 }
 .oscar__title::before {
-  content: "";
-  width: 100px; /* Adjust the width of the pseudo-element */
-  height: 100px; /* Adjust the height of the pseudo-element */
-  background-image: url("http://koukaki.local/wp-content/themes/foce/assets/images/Sunflower.png");
-  background-size: cover; /* Adjust background size as needed */
+  content: url("../foce-child/assets/images/Sunflower.png");
+  width: 216px;
+  height: auto;
+  position: absolute;
+  top: -200px;
+  left: 95px;
 }
 
-.oscar__img {
-  margin-left: 0;
+#studio div::after {
+  content: url("../foce-child/assets/images/Orchid.png");
+  position: absolute;
+  width: 172px;
+  height: auto;
+  left: 1334px;
+  top: 400px;
 }
 
 .site-footer::before, .site-footer::after {
@@ -127,6 +133,8 @@
 .story__article::after,
 #studio h2::before,
 #studio h2::after,
+#studio div::after,
+.oscar__title::before,
 .site-footer ul::after {
   line-height: 0;
   animation: rotation 10000ms linear infinite;

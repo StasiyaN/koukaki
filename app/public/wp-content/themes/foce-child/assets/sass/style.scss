@@ -100,8 +100,7 @@
     box-sizing: content-box;
     width: 825px; // contre le maquette
     height: 200.02px;
-    
-    
+  
   }
   
   
@@ -110,23 +109,36 @@
     font-weight: 700;
     font-size: 42px;      
     line-height: 1.2;
-    background-image: url("http://koukaki.local/wp-content/themes/foce-child/assets/images/oscars-bg-image.png");
+    background-image: url("../foce-child/assets/images/oscars-bg-image.png");
     background-size: 800px 260px; //contre le maquette
     letter-spacing: -2%;
     width: 675px;
+
     &::before {
-      content: "";      
-      width: 100px; /* Adjust the width of the pseudo-element */
-      height: 100px; /* Adjust the height of the pseudo-element */
-      background-image: url("http://koukaki.local/wp-content/themes/foce/assets/images/Sunflower.png");
-      background-size: cover; /* Adjust background size as needed */
+      content: url('../foce-child/assets/images/Sunflower.png');
+      width: 216px;
+      height: auto;
+      position: absolute;
+      top: -200px;
+      left: 95px;
+ 
     }
-  }
+    
+
+    }
   
-  .oscar__img {
-    margin-left: 0;
-  }
   
+    #studio {
+      div::after{
+      content: url('../foce-child/assets/images/Orchid.png');
+      position: absolute;
+      width: 172px;
+      height: auto;
+      left: 1334px;
+      top: 400px;
+    }
+    }
+    
   
   
   // DISPLAY NONE POUR LES FLEURS DANS LE FOOTER
@@ -143,6 +155,8 @@
   .story__article::after,
   #studio h2::before,
   #studio h2::after,
+  #studio div::after,
+  .oscar__title::before,
   .site-footer ul::after {
     line-height: 0;
     animation: $rotationFlower;
