@@ -1,3 +1,13 @@
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: center center; /* Set the transform origin to the center of the image */
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: center center; /* Maintain the same transform origin for the end of the animation */
+  }
+}
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -28,11 +38,21 @@
   }
 }
 .banner {
+  background-image: none;
+  position: relative;
+  width: 100%;
   animation: fadeInDown 1000ms ease-in-out;
+  z-index: -1;
+  overflow: hidden;
 }
 
-img {
-  animation: pText 1000ms ease-in-out;
+.fallback-image {
+  display: none;
+}
+
+.logo-img {
+  position: absolute;
+  animation: fadeInUp 1000ms ease-in-out;
 }
 
 .story {
@@ -101,6 +121,15 @@ img {
 
 .site-footer::before, .site-footer::after {
   display: none;
+}
+
+.story h2::after,
+.story__article::after,
+#studio h2::before,
+#studio h2::after,
+.site-footer ul::after {
+  line-height: 0;
+  animation: rotation 10000ms linear infinite;
 }
 
 /*# sourceMappingURL=style.css.map */

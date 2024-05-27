@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 
 @keyframes fadeInUp {
   from {
@@ -32,12 +33,27 @@
   }
 }
 
+// general 
+
 //animation hero
+
 .banner {
+  background-image: none;
+  position: relative;
+  width: 100%;
   animation: $animationDown;
+  z-index: -1;
+  overflow: hidden;
 }
-img {
-  animation: $animationText;
+
+
+.fallback-image {
+  display: none;
+}
+
+.logo-img {
+  position: absolute;
+  animation: $animationUp;
 }
 
 // .fadeInUpSection {
@@ -77,18 +93,18 @@ img {
     margin-top: 237px;
     margin-bottom: 125.28px;
     animation: $animationUp;
- 
+    
   }
   
   .oscar__article {
     box-sizing: content-box;
     width: 825px; // contre le maquette
     height: 200.02px;
-
-
-    }
+    
+    
+  }
   
-
+  
   .oscar__title {
     font-family: "Quicksand";
     font-weight: 700;
@@ -104,7 +120,7 @@ img {
       height: 100px; /* Adjust the height of the pseudo-element */
       background-image: url("http://koukaki.local/wp-content/themes/foce/assets/images/Sunflower.png");
       background-size: cover; /* Adjust background size as needed */
-  }
+    }
   }
   
   .oscar__img {
@@ -123,4 +139,13 @@ img {
   }
   
   //rotation des fleurs
+  .story h2::after,
+  .story__article::after,
+  #studio h2::before,
+  #studio h2::after,
+  .site-footer ul::after {
+    line-height: 0;
+    animation: $rotationFlower;
+  }
+  
   

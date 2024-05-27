@@ -1,0 +1,11 @@
+@keyframes rotation {
+    0% {     
+        transform: rotate(0deg);
+        transform-origin: center center; /* Set the transform origin to the center of the image */
+    }
+    
+    100% {
+        transform: rotate(360deg);
+        transform-origin: center center; /* Maintain the same transform origin for the end of the animation */
+    }
+}
