@@ -28,36 +28,79 @@
   }
 }
 .banner {
-  animation: fadeInDown 1500ms ease-in-out;
+  animation: fadeInDown 1000ms ease-in-out;
 }
 
 img {
-  animation: pText 1500ms ease-in-out;
+  animation: pText 1000ms ease-in-out;
 }
 
 .story {
-  animation: fadeInUp 1500ms ease-in-out;
+  animation: fadeInUp 1000ms ease-in-out;
 }
 .story p {
-  animation: pText 1500ms ease-in-out;
+  animation: pText 1000ms ease-in-out;
 }
 
 #place {
-  animation: fadeInUp 1500ms ease-in-out;
+  animation: fadeInUp 1000ms ease-in-out;
 }
 #place p {
-  animation: pText 1500ms ease-in-out;
+  animation: pText 1000ms ease-in-out;
 }
 
 #studio {
-  animation: fadeInUp 1500ms ease-in-out;
+  animation: fadeInUp 1000ms ease-in-out;
 }
 #studio p {
-  animation: pText 1500ms ease-in-out;
+  animation: pText 1000ms ease-in-out;
 }
 
 #characters {
-  animation: fadeInUp 1500ms ease-in-out;
+  animation: fadeInUp 1000ms ease-in-out;
+}
+
+#oscar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 237px;
+  margin-bottom: 125.28px;
+  animation: fadeInUp 1000ms ease-in-out;
+}
+
+.oscar__article {
+  box-sizing: content-box;
+  width: 825px;
+  height: 200.02px;
+}
+
+.oscar__title {
+  font-family: "Quicksand";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.2;
+  background-image: url("http://koukaki.local/wp-content/themes/foce-child/assets/images/oscars-bg-image.png");
+  background-size: 800px 260px;
+  letter-spacing: -2%;
+  width: 675px;
+}
+.oscar__title::before {
+  content: "";
+  width: 100px; /* Adjust the width of the pseudo-element */
+  height: 100px; /* Adjust the height of the pseudo-element */
+  background-image: url("http://koukaki.local/wp-content/themes/foce/assets/images/Sunflower.png");
+  background-size: cover; /* Adjust background size as needed */
+}
+
+.oscar__img {
+  margin-left: 0;
+}
+
+.site-footer::before, .site-footer::after {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

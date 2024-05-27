@@ -36,34 +36,91 @@
 .banner {
   animation: $animationDown;
 }
- img {
-    animation: $animationText;
-  }
+img {
+  animation: $animationText;
+}
 
 // .fadeInUpSection {
-//   animation: $animationUp;
-// }
+  //   animation: $animationUp;
+  // }
+  
+  // animations sections
+  .story {
+    animation: $animationUp;
+    p {
+      animation: $animationText;
+    }
+  }
+  #place {
+    animation: $animationUp;
+    p {
+      animation: $animationText;
+    }
+  }
+  #studio {
+    animation: $animationUp;
+    p {
+      animation: $animationText;
+    }
+  }
+  #characters {
+    animation: $animationUp;
+  }
+  
+  //section Oscar
+  #oscar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 237px;
+    margin-bottom: 125.28px;
+    animation: $animationUp;
+ 
+  }
+  
+  .oscar__article {
+    box-sizing: content-box;
+    width: 825px; // contre le maquette
+    height: 200.02px;
 
-// animations sections
-.story {
-  animation: $animationUp;
-  p {
-    animation: $animationText;
+
     }
-}
-#place {
-  animation: $animationUp;
-  p {
-    animation: $animationText;
+  
+
+  .oscar__title {
+    font-family: "Quicksand";
+    font-weight: 700;
+    font-size: 42px;      
+    line-height: 1.2;
+    background-image: url("http://koukaki.local/wp-content/themes/foce-child/assets/images/oscars-bg-image.png");
+    background-size: 800px 260px; //contre le maquette
+    letter-spacing: -2%;
+    width: 675px;
+    &::before {
+      content: "";      
+      width: 100px; /* Adjust the width of the pseudo-element */
+      height: 100px; /* Adjust the height of the pseudo-element */
+      background-image: url("http://koukaki.local/wp-content/themes/foce/assets/images/Sunflower.png");
+      background-size: cover; /* Adjust background size as needed */
+  }
+  }
+  
+  .oscar__img {
+    margin-left: 0;
+  }
+  
+  
+  
+  // DISPLAY NONE POUR LES FLEURS DANS LE FOOTER
+  
+  .site-footer {
+    &::before,
+    &::after {
+      display: none;
     }
-}
-#studio {
-  animation: $animationUp;
-  p {
-    animation: $animationText;
-    }
-}
-#characters {
-  animation: $animationUp;
- }
+  }
+  
+  //rotation des fleurs
   
