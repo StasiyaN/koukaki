@@ -1,13 +1,3 @@
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-    transform-origin: center center; /* Set the transform origin to the center of the image */
-  }
-  100% {
-    transform: rotate(360deg);
-    transform-origin: center center; /* Maintain the same transform origin for the end of the animation */
-  }
-}
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -35,6 +25,26 @@
   }
   to {
     transform: translateY(0);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: center center; /* Set the transform origin to the center of the image */
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: center center; /* Maintain the same transform origin for the end of the animation */
+  }
+}
+@keyframes titles {
+  0% {
+    opacity: 0;
+    transform: translateY(-500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(500px);
   }
 }
 .banner {
@@ -138,6 +148,10 @@
 .site-footer ul::after {
   line-height: 0;
   animation: rotation 10000ms linear infinite;
+}
+
+.animated-header {
+  animation: titles 200ms ease-in;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,37 +1,7 @@
 @import 'variables';
-@import 'mixins';
+@import 'keyframes';
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(200px); // Début de l'animation du bas vers le haut
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0); // Fin de l'animation
-  }
-}
 
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-100px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes pText {
-  from {
-    opacity: 1;
-    transform: translateY(-200px);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
 
 // general 
 
@@ -161,5 +131,11 @@
     line-height: 0;
     animation: $rotationFlower;
   }
+
+
+  .animated-header {
+  animation: $animationHeader;
+}
+  
   
   

@@ -1,0 +1,60 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(200px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); 
+}
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pText {
+  from {
+    opacity: 1;
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+
+
+@keyframes rotation {
+  0% {     
+    transform: rotate(0deg);
+    transform-origin: center center; /* Set the transform origin to the center of the image */
+  }
+  
+  100% {
+    transform: rotate(360deg);
+    transform-origin: center center; /* Maintain the same transform origin for the end of the animation */
+  }
+}
+
+@keyframes titles {
+  0% {
+    opacity: 0;
+    transform: translateY(-500px);
+
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(500px);
+
+  }
+  
+}
