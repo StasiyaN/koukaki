@@ -26,11 +26,7 @@
   animation: $animationUp;
 }
 
-// .fadeInUpSection {
-  //   animation: $animationUp;
-  // }
-  
-  // animations sections
+
   .story {
     animation: $animationUp;
     p {
@@ -85,7 +81,7 @@
     width: 675px;
 
     &::before {
-      content: url('../foce-child/assets/images/Sunflower.png');
+      content: url("../foce/assets/images/Sunflower.png");
       width: 216px;
       height: auto;
       position: absolute;
@@ -93,14 +89,12 @@
       left: 95px;
  
     }
-    
-
     }
   
   
     #studio {
       div::after{
-      content: url('../foce-child/assets/images/Orchid.png');
+      content: url('../foce/assets/images/Orchid.png');
       position: absolute;
       width: 172px;
       height: auto;

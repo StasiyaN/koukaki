@@ -81,6 +81,25 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log('DOMContentLoaded');
 
+   const menuLinks = document.querySelectorAll('.main-navigation a'); 
+   console.log(menuLinks);
+   menuLinks.forEach (menuLink => {
+    console.log(menuLink);
+    menuLink.addEventListener('click', function () {
+        console.log(menuLink.getAttribute('href'));
+        document.querySelector(menuLink.getAttribute('href')).scrollIntoView({ 
+            behavior: 'smooth'
+        });
+        //return false;
+    });
+   });
+    // .addEventListener ('click', function () {
+    //     console.log ('ok');
+    //     return false;
+    // document.querySelector('#characters').scrollIntoView({ 
+    //    
+    //   });
+
     // Select all h2 and h3 elements
     const headers = document.querySelectorAll('h2, h3');
 
@@ -101,32 +120,32 @@ document.addEventListener('DOMContentLoaded', function() {
         header.innerHTML = wrappedWords;
     });
 
-    // Observer settings
-    let options = {
-        root: null,
-        rootMargin: "0px",
-        threshold: 1.0, 
-    };
+//     // Observer settings
+//     let options = {
+//         root: null,
+//         rootMargin: "0px",
+//         threshold: 1.0, 
+//     };
 
-    // Callback function
-    let callback = function(entries, observer) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                console.log('find', entry);
-                entry.target.classList.add('animated-header');
-                observer.unobserve(entry.target);
-            }
-        });
-    };
+//     // Callback function
+//     let callback = function(entries, observer) {
+//         entries.forEach(entry => {
+//             if (entry.isIntersecting) {
+//                 console.log('find', entry);
+//                 entry.target.classList.add('animated-header');
+//                 observer.unobserve(entry.target);
+//             }
+//         });
+//     };
 
-    // Initialize observer
-    let observer = new IntersectionObserver(callback, options);
+//     // Initialize observer
+//     let observer = new IntersectionObserver(callback, options);
 
-    // Choosing the elements we will observe
-    let targets = document.querySelectorAll('.span');
-    if (targets.length) {
-        targets.forEach(target => observer.observe(target));
-    } else {
-        console.error('No elements with the class "span" found in the DOM.');
-    }
-});
+//     // Choosing the elements we will observe
+//     let targets = document.querySelectorAll('.span');
+//     if (targets.length) {
+//         targets.forEach(target => observer.observe(target));
+//     } else {
+//         console.error('No elements with the class "span" found in the DOM.');
+//     }
+ });
