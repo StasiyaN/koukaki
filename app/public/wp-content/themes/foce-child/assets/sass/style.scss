@@ -5,21 +5,28 @@
 
 // general 
 
+
+
+
 //animation hero
 
 .banner {
-  background-image: none;
-  position: relative;
-  width: 100%;
-  animation: $animationDown;
-  z-index: -1;
   overflow: hidden;
 }
 
+.video-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+ }
+ .background-video {
+  z-index: -1;
+  animation: $animationDown;
+ }
 
 .fallback-image {
-  display: none;
-}
+  display: none !important;
+ }
 
 .logo-img {
   position: absolute;

@@ -6,13 +6,13 @@ get_header();
 <main id="primary" class="site-main">
 <!-- CHANGEMENT SECTION BANNER POUR DIV POUR MIEUX MANIPULER L ANIMATIONS DANS LA SECTION -->
     <div class="banner">
-        <div class="video-container">
-            <video class="background-video" autoplay muted loop>
-                <source src="<?php echo get_stylesheet_directory_uri() . '/assets/video/banner-video.mp4'; ?>" type="video/mp4">
-            </video>
-            <img src="<?php echo get_template_directory_uri() . '/assets/images/banner.png'; ?>" class="fallback-image" alt="Image de remplacement">
-        </div>
-            <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?>" class="logo-img" alt="logo Fleurs d'oranger & chats errants">
+            <div class="video-container">
+                <video class="background-video" autoplay muted loop>
+                    <source src="<?php echo get_stylesheet_directory_uri() . '/assets/video/banner-video.mp4'; ?>" type="video/mp4" class="video">
+                </video>
+                <img src="<?php echo get_template_directory_uri() . '/assets/images/banner.png'; ?>" class="fallback-image" alt="Image de remplacement">
+            </div>
+                <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?>" class="logo-img" alt="logo Fleurs d'oranger & chats errants">
     </div>
 
 

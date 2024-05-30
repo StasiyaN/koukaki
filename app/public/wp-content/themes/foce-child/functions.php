@@ -9,6 +9,7 @@ function theme_enqueue_styles() {
 
     // Enqueue child script
     wp_enqueue_script( 'child-script', get_stylesheet_directory_uri() . '/assets/js/main.js', array('jquery'), null, true );
+    wp_enqueue_script ('parallax-script', get_stylesheet_directory_uri () . '/assets/js/parallax.js', array('jquery'), null, true);
 }
 
 

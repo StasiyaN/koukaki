@@ -48,16 +48,22 @@
   }
 }
 .banner {
-  background-image: none;
-  position: relative;
-  width: 100%;
-  animation: fadeInDown 1000ms ease-in-out;
-  z-index: -1;
   overflow: hidden;
 }
 
+.video-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.background-video {
+  z-index: -1;
+  animation: fadeInDown 1000ms ease-in-out;
+}
+
 .fallback-image {
-  display: none;
+  display: none !important;
 }
 
 .logo-img {
