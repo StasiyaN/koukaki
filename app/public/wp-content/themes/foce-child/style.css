@@ -40,13 +40,34 @@
 @keyframes titles {
   from {
     opacity: 0;
-    transform: translateY(500px);
+    transform: translateY(100px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-15px, 11px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  75% {
+    transform: translate(15px, 10px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+.banner {
+  background-image: none;
+}
+
 .banner {
   overflow: hidden;
 }
@@ -63,12 +84,12 @@
 }
 
 .fallback-image {
-  display: none !important;
+  display: none;
 }
 
 .logo-img {
   position: absolute;
-  animation: fadeInUp 1000ms ease-in-out;
+  animation: fadeInUp 1000ms ease-in-out, float 2s ease-in-out infinite;
 }
 
 .story {
@@ -167,6 +188,27 @@
 }
 .animated-header:nth-child(4) {
   animation-delay: 2s;
+}
+
+.story #place {
+  background-image: url("../foce-child/assets/images/Studio_Koukaki-image_place.png");
+  position: relative;
+}
+.story #place::before {
+  content: url("../foce-child/assets/images/little_cloud.png");
+  position: absolute;
+  left: var(--before-left, 793px);
+  top: 248px;
+  filter: blur(20px);
+  transition: left 0.5s ease;
+}
+.story #place::after {
+  content: url("../foce-child/assets/images/big_cloud.png");
+  position: absolute;
+  left: var(--after-left, 1031px);
+  top: 65px;
+  filter: blur(20px);
+  transition: left 0.5s ease infinite;
 }
 
 /*# sourceMappingURL=style.css.map */

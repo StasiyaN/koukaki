@@ -6,7 +6,9 @@
 // general 
 
 
-
+.banner {
+  background-image: none;
+}
 
 //animation hero
 
@@ -25,13 +27,16 @@
 }
 
 .fallback-image {
-  display: none !important;
+  display: none;
 }
-
 .logo-img {
   position: absolute;
-  animation: $animationUp;
+  animation: $animationUp, $headerFloat;
 }
+
+
+
+
 
 
 .story {
@@ -136,6 +141,7 @@
 
 .animated-header {
   animation: $animationHeader;
+
   
   
   &:nth-child(2) {
@@ -150,4 +156,27 @@
   }
 }
 
+//les nuages
+.story #place {
+  background-image: url("../foce-child/assets/images/Studio_Koukaki-image_place.png");
+  position: relative;
 
+  &::before {
+    content:url("../foce-child/assets/images/little_cloud.png");
+    position: absolute;
+    left: var(--before-left, 793px);
+    top: 248px;
+    filter: blur(20px);
+    transition: left 0.5s ease;
+
+  }
+
+  &::after {
+    content: url("../foce-child/assets/images/big_cloud.png");
+    position: absolute;
+    left: var(--after-left, 1031px);
+    top: 65px;
+    filter: blur(20px);
+    transition: left 0.5s ease infinite;
+  }
+}

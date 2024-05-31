@@ -8,16 +8,18 @@ get_header();
     <div class="banner">
             <div class="video-container">
                 <video class="background-video" autoplay muted loop>
-                    <source src="<?php echo get_stylesheet_directory_uri() . '/assets/video/banner-video.mp4'; ?>" type="video/mp4" class="video">
+                    <source src="<?php echo get_stylesheet_directory_uri() . '/assets/video/banner-video.mp4'; ?>" type="video/mp4" class="banner-video">
                 </video>
                 <img src="<?php echo get_template_directory_uri() . '/assets/images/banner.png'; ?>" class="fallback-image" alt="Image de remplacement">
             </div>
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?>" class="logo-img" alt="logo Fleurs d'oranger & chats errants">
-    </div>
+                <!-- <div class="logo-wrap"> -->
+                    <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?>" class="logo-img" alt="logo Fleurs d'oranger & chats errants">
+                <!-- </div> -->
+            </div>
 
 
 <section id="story" class="story">
-    <h2><span>'histoire</span></h2>
+    <h2><span>L'histoire</span></h2>
         <article id="story__article" class="story__article">
             <p><?php echo get_theme_mod('story'); ?></p>
         </article>
@@ -59,7 +61,7 @@ get_header();
     </article>
     <article id="place">
         <div>
-            <h3><span>Le Lieu</span></h3>
+            <h3><span>Le</span> <span>Lieu</span></h3>
                 <p><?php echo get_theme_mod('place'); ?></p>
         </div>
     </article>

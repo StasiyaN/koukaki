@@ -27,8 +27,9 @@ window.addEventListener('scroll', handleScroll);
 
 // Function to handle scroll event
 function handleScroll() {
-    // Get the updated list of elements with the class 'toAnimate' after adding spans
-    const spans = document.querySelectorAll('.toAnimate');
+    // Get the place section
+   
+    const spans = document.querySelectorAll('span');
     spans.forEach(span => {
         // Add your logic to add or remove classes based on scroll position
         if (isElementInViewport(span)) {
@@ -37,6 +38,9 @@ function handleScroll() {
             span.classList.remove('animated-header');
         }
     });
+   
+  
+   
 }
 
 // Function to check if an element is in the viewport
