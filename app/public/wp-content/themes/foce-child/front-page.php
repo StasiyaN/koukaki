@@ -63,6 +63,10 @@ get_header();
         <div>
             <h3><span>Le</span> <span>Lieu</span></h3>
                 <p><?php echo get_theme_mod('place'); ?></p>
+              
+                    <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/little_cloud.png'; ?>" alt="petite nuage" class="clouds cloud__little">
+                    <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/big_cloud.png'; ?>" alt="grande nuage" class="clouds cloud__big">
+                
         </div>
     </article>
 </section>
