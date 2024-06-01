@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to handle scroll event
     function handleScroll() {
         // Get the place section
-        const spans = document.querySelectorAll('span');
+        const spans = document.querySelectorAll('h2 span, h3 span');
         spans.forEach(span => {
             // Add your logic to add or remove classes based on scroll position
             if (isElementInViewport(span)) {

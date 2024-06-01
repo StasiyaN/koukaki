@@ -23,7 +23,12 @@ get_header();
         <article id="story__article" class="story__article">
             <p><?php echo get_theme_mod('story'); ?></p>
         </article>
-        <?php get_template_part('template-parts/slider');?>
+        <article id="characters">
+        <div class="main-character swiper-section">
+        <h3><span>Les</span> <span>personnages</span></h3>
+            <?php get_template_part('template-parts/slider');?>
+            </div>
+        </article>
        
        
   

@@ -224,15 +224,27 @@
   animation: clouds 1000ms linear forwards;
 }
 
+.story #characters div {
+  flex: none;
+}
+
+.story #characters h3 {
+  background-position: left;
+  text-align: left;
+  margin-left: 100px;
+  padding-left: 45px;
+}
+
 .swiper {
   max-width: 1266px;
-  height: 100vh;
+  height: 600px;
   padding-top: 50px;
   padding-bottom: 50px;
+  margin-left: 150px;
+  overflow: hidden;
 }
 
 .swiper-slide {
-  background-position: center;
   background-size: cover;
   width: 300px;
   height: 300px;
@@ -240,8 +252,10 @@
 
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
+}
+
+.swiper-pagination {
+  padding-top: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
