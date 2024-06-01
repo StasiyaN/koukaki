@@ -224,4 +224,23 @@
   animation: clouds 1000ms linear forwards;
 }
 
+.swiper {
+  max-width: 100%;
+  height: 100vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+}
+.swiper-slide .__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */

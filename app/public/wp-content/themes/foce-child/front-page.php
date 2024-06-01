@@ -34,10 +34,11 @@ get_header();
         $characters_query = new WP_Query($args);
         ?>
     <article id="characters">
-        <div class="main-character">
+        <div class="main-character swiper-section">
             <h3><span>Les</span> <span>personnages</span></h3>
-          
+                <?php get_template_part('template-parts/slider');?>
         </div>
+       
        
     </article>
     <article id="place">
