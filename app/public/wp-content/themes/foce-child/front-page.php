@@ -23,24 +23,10 @@ get_header();
         <article id="story__article" class="story__article">
             <p><?php echo get_theme_mod('story'); ?></p>
         </article>
-        <?php
-            $args = array(
-            'post_type' => 'characters',
-            'posts_per_page' => -1,
-            'meta_key'  => '_main_char_field',
-            'orderby'   => 'meta_value_num',
-            
-        );
-        $characters_query = new WP_Query($args);
-        ?>
-    <article id="characters">
-        <div class="main-character swiper-section">
-            <h3><span>Les</span> <span>personnages</span></h3>
-                <?php get_template_part('template-parts/slider');?>
-        </div>
+        <?php get_template_part('template-parts/slider');?>
        
        
-    </article>
+  
     <article id="place">
         <div>
             <h3><span>Le</span> <span>Lieu</span></h3>
