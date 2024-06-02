@@ -9,11 +9,11 @@
 //animation hero
 .banner {
   background-image: none;
-  overflow: hidden;
+  //overflow: hidden;
   img {
     width: 40%;
   }
- }
+}
 
 
 
@@ -144,13 +144,13 @@
 
 .animated-header {
   animation: $animationHeader;
-
+  
   
   
   &:nth-child(2) {
     animation-delay: 1s;
   }
-
+  
   &:nth-child(3) {
     animation-delay: 1.5s;
   }
@@ -166,67 +166,103 @@
 }
 
 
-  .cloud__little {
-    position: absolute;
-    left: 793px;
-    top: 248px;
-    filter: blur(20px);
-    //transition: left 0.5s ease;
-  }
+.cloud__little {
+  position: absolute;
+  left: 793px;
+  top: 248px;
+  filter: blur(20px);
+  //transition: left 0.5s ease;
+}
 
 .cloud__big {
   position: absolute;
-    left: 1031px;
-    top: 65px;
-    filter: blur(20px);
-    //transition: left 0.5s ease;
-  }
+  left: 1031px;
+  top: 65px;
+  filter: blur(20px);
+  //transition: left 0.5s ease;
+}
 
-  .clouds-animated {
-    animation: $animationClouds;
-    //transition: left 0.5s ease;
-  }
+.clouds-animated {
+  animation: $animationClouds;
+  //transition: left 0.5s ease;
+}
 
-  //SWIPER
+//SWIPER
 
-  .story #characters div {
-    flex: none;
-  }
+.story #characters div {
+  flex: none;
+}
 
-  .story #characters h3 {
+.story #characters h3 {
   background-position: left;
   text-align: left;
   margin-left: 100px;
   padding-left: 45px;
-  }
+}
 
 
 
-  .swiper {
-    max-width: 1266px;
-    height: 600px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-left: 150px;
-    overflow: hidden;
-    
-  }
-
- 
- 
-    .swiper-slide {
-      background-size: cover;
-      width: 300px;
-      height: 300px;
-    }
-
-    .swiper-slide img {
-      display: block;
-    }
+.swiper {
+  max-width: 1266px;
+  height: 600px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-left: 150px;
+  overflow: hidden;
   
+}
+
+
+
+.swiper-slide {
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+}
+
 .swiper-pagination {
   padding-top: 0;
   
   
 }
-  
+
+//BURGER MENU
+.main-navigation {
+  position: fixed;
+  width: 1440px;
+
+  div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 31%;
+  }
+  span {
+    margin: 20px;
+  }
+}
+.burger-menu-content {
+  display: none;
+  width: 1440px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #fff; /* Background color for the menu */
+  position: absolute;
+  top: 50px; /* Adjust based on your design */
+  right: 10px; /* Adjust based on your design */
+  border: 1px solid #ccc; /* Optional border */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional shadow */
+}
+.burger-menu-content li {
+  padding: 10px 20px;
+}
+.burger-menu-content li a {
+  text-decoration: none;
+  color: #000;
+}
+

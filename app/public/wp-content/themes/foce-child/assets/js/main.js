@@ -57,6 +57,25 @@ document.addEventListener('DOMContentLoaded', function() {
             rect.right <= (window.innerWidth || document.documentElement.clientWidth)
         );
     }
+
+    //BURGER MENU
+    const burgerMenu = document.getElementById('burger-menu');
+    const menuContent = document.querySelector('.burger-menu-content');
+
+    burgerMenu.addEventListener('click', function () {
+        if (burgerMenu.classList.contains('toggle')) {
+            burgerMenu.classList.remove('toggle');
+            burgerMenu.classList.add('opened');
+            burgerMenu.innerHTML = '<i class="fa-solid fa-xmark fa-3x"></i>';
+            menuContent.style.display = 'block';
+        } else {
+            burgerMenu.classList.remove('opened');
+				burgerMenu.classList.add('closed');
+				burgerMenu.innerHTML = '<i class="fa-solid fa-bars fa-3x"></i>';
+				menuContent.style.display = 'none';
+
+        }
+    })
     
     
 });

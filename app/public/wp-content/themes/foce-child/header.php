@@ -29,14 +29,22 @@
 		<nav id="site-navigation" class="main-navigation">
 
         <!-- suppression de button menu toggle -->
+        <!-- creation du menu burger -->
+        <!-- ajout du class pour ul + ajout de nouveau div pour les lien de burger-menu-->
+                <div class = "navbar">
+                <h1 class="site-title"> <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+                <span id="burger-menu" class="toggle"><i class="fa-solid fa-bars fa-3x"></i></span>
+               </div>
+        </nav>
+       
+  <ul class="burger-menu-content">
+            <li><a href="#story">Histoire</a></li>
+            <li><a href="#characters">Personnages</a></li>
+            <li><a href="#place">Lieu</a></li>
+            <li><a href="#studio">Studio Koukaki</a></li>
+        </ul>
 
-                <ul>
-                <li><a href="#story">Histoire</a></li>
-                <li><a href="#characters">Personnages</a></li>
-                <li class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
-                <li><a href="#place">Lieu</a></li>
-                <li><a href="#studio">Studio Koukaki</a></li>
-            </ul>
-
-		</nav><!-- #site-navigation -->
+                
+          
+		
 	</header><!-- #masthead -->

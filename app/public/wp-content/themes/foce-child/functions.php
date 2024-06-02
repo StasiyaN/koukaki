@@ -16,9 +16,10 @@ function theme_enqueue_styles() {
     wp_enqueue_style('swiper-slider-css', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css', array(), true);
     wp_enqueue_script('swiper-slider-script', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array(), true);
     wp_enqueue_script ('swiper-my-script', get_stylesheet_directory_uri () . '/assets/js/swiper.js', array('jquery'), null, true);
+    wp_enqueue_style ('font-awsome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css', array(), true);
 }
 
-
+        
 if ( get_stylesheet() !== get_template() ) {
     add_filter( 'pre_update_option_theme_mods_' . get_stylesheet(), function ( $value, $old_value ) {
         update_option( 'theme_mods_' . get_template(), $value );

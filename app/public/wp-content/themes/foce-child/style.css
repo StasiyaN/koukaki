@@ -77,7 +77,6 @@
 }
 .banner {
   background-image: none;
-  overflow: hidden;
 }
 .banner img {
   width: 40%;
@@ -256,6 +255,43 @@
 
 .swiper-pagination {
   padding-top: 0;
+}
+
+.main-navigation {
+  position: fixed;
+  width: 1440px;
+}
+.main-navigation div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 31%;
+}
+.main-navigation span {
+  margin: 20px;
+}
+
+.burger-menu-content {
+  display: none;
+  width: 1440px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #fff; /* Background color for the menu */
+  position: absolute;
+  top: 50px; /* Adjust based on your design */
+  right: 10px; /* Adjust based on your design */
+  border: 1px solid #ccc; /* Optional border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+.burger-menu-content li {
+  padding: 10px 20px;
+}
+
+.burger-menu-content li a {
+  text-decoration: none;
+  color: #000;
 }
 
 /*# sourceMappingURL=style.css.map */
