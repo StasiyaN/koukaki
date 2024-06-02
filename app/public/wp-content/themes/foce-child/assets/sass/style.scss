@@ -6,15 +6,18 @@
 // general 
 
 
+//animation hero
 .banner {
   background-image: none;
-}
-
-//animation hero
-
-.banner {
   overflow: hidden;
-}
+  img {
+    width: 40%;
+  }
+ }
+
+
+
+
 
 .video-container {
   max-width: 1440px;
@@ -31,7 +34,7 @@
 }
 .logo-img {
   position: absolute;
-  animation: $animationUp, $headerFloat;
+  animation: $animationUp;
 }
 
 

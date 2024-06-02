@@ -77,10 +77,10 @@
 }
 .banner {
   background-image: none;
-}
-
-.banner {
   overflow: hidden;
+}
+.banner img {
+  width: 40%;
 }
 
 .video-container {
@@ -100,7 +100,7 @@
 
 .logo-img {
   position: absolute;
-  animation: fadeInUp 1000ms ease-in-out, float 2s ease-in-out infinite;
+  animation: fadeInUp 1000ms ease-in-out;
 }
 
 .story {
