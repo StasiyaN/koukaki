@@ -18,6 +18,7 @@ get_header();
             </div>
 
 
+
 <section id="story" class="story">
     <h2><span>L'histoire</span></h2>
         <article id="story__article" class="story__article">
@@ -25,7 +26,7 @@ get_header();
         </article>
         <article id="characters">
         <div class="main-character swiper-section">
-        <h3><span>Les</span> <span>personnages</span></h3>
+            <h3><span>Les</span> <span>personnages</span></h3>
             <?php get_template_part('template-parts/slider');?>
             </div>
         </article>

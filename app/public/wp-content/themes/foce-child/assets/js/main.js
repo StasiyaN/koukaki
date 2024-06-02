@@ -58,24 +58,47 @@ document.addEventListener('DOMContentLoaded', function() {
         );
     }
 
-    //BURGER MENU
-    const burgerMenu = document.getElementById('burger-menu');
-    const menuContent = document.querySelector('.burger-menu-content');
+   
 
-    burgerMenu.addEventListener('click', function () {
-        if (burgerMenu.classList.contains('toggle')) {
-            burgerMenu.classList.remove('toggle');
-            burgerMenu.classList.add('opened');
-            burgerMenu.innerHTML = '<i class="fa-solid fa-xmark fa-3x"></i>';
-            menuContent.style.display = 'block';
-        } else {
+// BURGER MENU
+const burgerMenu = document.getElementById('burger-menu');
+const menuContent = document.getElementById('menu-container');
+const banner = document.querySelectorAll('.banner');
+
+burgerMenu.addEventListener('click', function () {
+    if (burgerMenu.classList.contains('closed')) {
+        // Open the burger menu
+        burgerMenu.classList.remove('closed');
+        burgerMenu.classList.add('opened');
+        burgerMenu.innerHTML = '<i class="fa-solid fa-xmark fa-3x"></i>';
+        menuContent.style.display = 'block';
+      
+    } else {
+        // Close the burger menu
+        burgerMenu.classList.remove('opened');
+        burgerMenu.classList.add('closed');
+        burgerMenu.innerHTML = '<i class="fa-solid fa-bars fa-3x"></i>';
+        menuContent.style.display = 'none';
+    }
+
+    const burgerMenuLink = document.querySelectorAll('.burger-menu-content li a');
+    console.log(burgerMenuLink);
+    burgerMenuLink.forEach(link => {
+        link.addEventListener('click', function () {
+            menuContent.style.display = 'none';
             burgerMenu.classList.remove('opened');
-				burgerMenu.classList.add('closed');
-				burgerMenu.innerHTML = '<i class="fa-solid fa-bars fa-3x"></i>';
-				menuContent.style.display = 'none';
+            burgerMenu.classList.add('closed');
+            burgerMenu.innerHTML = '<i class="fa-solid fa-bars fa-3x"></i>';
+        });
+    });
 
-        }
-    })
-    
-    
-});
+     });
+
+
+
+    });
+
+
+
+   
+  

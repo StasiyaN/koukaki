@@ -8,21 +8,17 @@
 
 //animation hero
 .banner {
-  background-image: none;
-  //overflow: hidden;
-  img {
-    width: 40%;
-  }
-}
-
-
-
-
-
-.video-container {
-  max-width: 1440px;
-  margin: 0 auto;
   position: relative;
+  background-image: none;
+  overflow: hidden;
+  top: -80px;
+}
+  
+.video-container {
+  position: relative;
+  max-width: 1440px;
+  height: 806px;  
+  top: 80px;
 }
 .background-video {
   z-index: -1;
@@ -37,10 +33,7 @@
   animation: $animationUp;
 }
 
-
-
-
-
+//animations
 
 .story {
   animation: $animationUp;
@@ -61,7 +54,11 @@
   }
 }
 #characters {
+  padding-top: 40px;
   animation: $animationUp;
+  h3 {
+    margin-bottom: 0px;
+  }
 }
 
 //section Oscar
@@ -71,7 +68,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 237px;
+  margin-top: 250px;
   margin-bottom: 125.28px;
   animation: $animationUp;
   
@@ -94,6 +91,7 @@
   background-size: 800px 260px; //contre le maquette
   letter-spacing: -2%;
   width: 675px;
+  //margin-top: 30px;
   
   &::before {
     content: url("../foce/assets/images/Sunflower.png");
@@ -204,10 +202,10 @@
 
 .swiper {
   max-width: 1266px;
-  height: 600px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin-left: 150px;
+  height: 500px;
+ // padding-top: 50px;
+  //padding-bottom: 50px;
+ // margin-left: 120px;
   overflow: hidden;
   
 }
@@ -231,38 +229,60 @@
 }
 
 //BURGER MENU
-.main-navigation {
-  position: fixed;
+.burger-menu-bg-container {
+  background-color: #FFF5E9;
+  //animation: $animationUp;
+}
+ .main-navigation {
   width: 1440px;
+ 
 
   div {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 31%;
+    gap: 25%;
+    cursor: pointer;
   }
   span {
-    margin: 20px;
+    margin: 0 60px;
   }
-}
-.burger-menu-content {
+ }
+
+//NAV LI
+#menu-container {
   display: none;
   width: 1440px;
+  height: 944px;
+  background-color: #FFF5E9;
+  animation: $animationUp;
+}
+.burger-menu-content {
+  width: 100%;
   list-style: none;
-  padding: 0;
-  margin: 0;
-  background: #fff; /* Background color for the menu */
-  position: absolute;
-  top: 50px; /* Adjust based on your design */
-  right: 10px; /* Adjust based on your design */
-  border: 1px solid #ccc; /* Optional border */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional shadow */
+  background: #FFF5E9; 
+  top: 80px; 
+  margin-left: -10px;
+  text-align: center;
 }
 .burger-menu-content li {
-  padding: 10px 20px;
-}
+  padding-top: 15px;
+ }
 .burger-menu-content li a {
+  font-size: 54px;
+  font-weight: 400;
+  align-content: center;
   text-decoration: none;
   color: #000;
 }
+.burger-menu-bg-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  
+  img {
+    padding-top: 43px;
+  }
+}
 
+//animation menu

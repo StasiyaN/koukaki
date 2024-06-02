@@ -76,16 +76,17 @@
   }
 }
 .banner {
+  position: relative;
   background-image: none;
-}
-.banner img {
-  width: 40%;
+  overflow: hidden;
+  top: -80px;
 }
 
 .video-container {
-  max-width: 1440px;
-  margin: 0 auto;
   position: relative;
+  max-width: 1440px;
+  height: 806px;
+  top: 80px;
 }
 
 .background-video {
@@ -124,7 +125,11 @@
 }
 
 #characters {
+  padding-top: 40px;
   animation: fadeInUp 1000ms ease-in-out;
+}
+#characters h3 {
+  margin-bottom: 0px;
 }
 
 #oscar {
@@ -133,7 +138,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 237px;
+  margin-top: 250px;
   margin-bottom: 125.28px;
   animation: fadeInUp 1000ms ease-in-out;
 }
@@ -236,10 +241,7 @@
 
 .swiper {
   max-width: 1266px;
-  height: 600px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin-left: 150px;
+  height: 500px;
   overflow: hidden;
 }
 
@@ -257,41 +259,60 @@
   padding-top: 0;
 }
 
+.burger-menu-bg-container {
+  background-color: #FFF5E9;
+}
+
 .main-navigation {
-  position: fixed;
   width: 1440px;
 }
 .main-navigation div {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 31%;
+  gap: 25%;
+  cursor: pointer;
 }
 .main-navigation span {
-  margin: 20px;
+  margin: 0 60px;
+}
+
+#menu-container {
+  display: none;
+  width: 1440px;
+  height: 944px;
+  background-color: #FFF5E9;
+  animation: fadeInUp 1000ms ease-in-out;
 }
 
 .burger-menu-content {
-  display: none;
-  width: 1440px;
+  width: 100%;
   list-style: none;
-  padding: 0;
-  margin: 0;
-  background: #fff; /* Background color for the menu */
-  position: absolute;
-  top: 50px; /* Adjust based on your design */
-  right: 10px; /* Adjust based on your design */
-  border: 1px solid #ccc; /* Optional border */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  background: #FFF5E9;
+  top: 80px;
+  margin-left: -10px;
+  text-align: center;
 }
 
 .burger-menu-content li {
-  padding: 10px 20px;
+  padding-top: 15px;
 }
 
 .burger-menu-content li a {
+  font-size: 54px;
+  font-weight: 400;
+  align-content: center;
   text-decoration: none;
   color: #000;
+}
+
+.burger-menu-bg-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+}
+.burger-menu-bg-container img {
+  padding-top: 43px;
 }
 
 /*# sourceMappingURL=style.css.map */
