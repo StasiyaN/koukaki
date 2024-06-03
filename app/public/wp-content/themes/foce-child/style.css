@@ -259,8 +259,31 @@
   padding-top: 0;
 }
 
-.burger-menu-bg-container {
-  background-color: #FFF5E9;
+#menu-container-hidden {
+  display: none;
+}
+
+.burger-menu-logo {
+  position: relative;
+  display: inline-block;
+  align-self: center;
+}
+.burger-menu-logo::before, .burger-menu-logo::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+}
+
+.burger-menu-logo::before {
+  content: url("../foce/assets/images/Orchid.png");
+  top: 72px;
+  left: -680px;
+}
+
+.burger-menu-logo::after {
+  content: url("../foce/assets/images/Sunflower.png");
+  top: 89px;
+  left: 500px;
 }
 
 .main-navigation {
@@ -277,15 +300,16 @@
   margin: 0 60px;
 }
 
-#menu-container {
-  display: none;
+.menu-container {
+  display: flex;
+  flex-direction: column;
   width: 1440px;
   height: 944px;
   background-color: #FFF5E9;
   animation: fadeInUp 1000ms ease-in-out;
 }
 
-.burger-menu-content {
+.burger-menu {
   width: 100%;
   list-style: none;
   background: #FFF5E9;
@@ -294,25 +318,16 @@
   text-align: center;
 }
 
-.burger-menu-content li {
+.burger-menu li {
   padding-top: 15px;
 }
 
-.burger-menu-content li a {
+.burger-menu li a {
   font-size: 54px;
   font-weight: 400;
   align-content: center;
   text-decoration: none;
   color: #000;
-}
-
-.burger-menu-bg-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 0px;
-}
-.burger-menu-bg-container img {
-  padding-top: 43px;
 }
 
 /*# sourceMappingURL=style.css.map */

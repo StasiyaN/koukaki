@@ -13,7 +13,7 @@
   overflow: hidden;
   top: -80px;
 }
-  
+
 .video-container {
   position: relative;
   max-width: 1440px;
@@ -203,9 +203,9 @@
 .swiper {
   max-width: 1266px;
   height: 500px;
- // padding-top: 50px;
+  // padding-top: 50px;
   //padding-bottom: 50px;
- // margin-left: 120px;
+  // margin-left: 120px;
   overflow: hidden;
   
 }
@@ -229,14 +229,41 @@
 }
 
 //BURGER MENU
-.burger-menu-bg-container {
-  background-color: #FFF5E9;
-  //animation: $animationUp;
-}
- .main-navigation {
-  width: 1440px;
- 
 
+#menu-container-hidden {
+  display: none;
+}
+
+.burger-menu-logo {
+  position: relative;
+  display: inline-block;
+  align-self: center;
+  
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+  }
+} 
+
+//AJOUT IMAGES BURGER
+.burger-menu-logo::before {
+  content: url('../foce/assets/images/Orchid.png');
+  top: 72px;
+  left: -680px;
+}
+.burger-menu-logo::after {
+  content: url('../foce/assets/images/Sunflower.png');
+  top: 89px;
+  left: 500px;
+
+}
+
+
+
+.main-navigation {
+  width: 1440px;
   div {
     display: flex;
     justify-content: flex-end;
@@ -247,17 +274,18 @@
   span {
     margin: 0 60px;
   }
- }
+}
 
 //NAV LI
-#menu-container {
-  display: none;
+.menu-container {
+  display: flex;
+  flex-direction: column;
   width: 1440px;
   height: 944px;
   background-color: #FFF5E9;
   animation: $animationUp;
 }
-.burger-menu-content {
+.burger-menu {
   width: 100%;
   list-style: none;
   background: #FFF5E9; 
@@ -265,24 +293,15 @@
   margin-left: -10px;
   text-align: center;
 }
-.burger-menu-content li {
+.burger-menu li {
   padding-top: 15px;
- }
-.burger-menu-content li a {
+}
+.burger-menu li a {
   font-size: 54px;
   font-weight: 400;
   align-content: center;
   text-decoration: none;
   color: #000;
-}
-.burger-menu-bg-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 0px;
-  
-  img {
-    padding-top: 43px;
-  }
 }
 
 //animation menu

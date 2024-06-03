@@ -62,10 +62,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // BURGER MENU
 const burgerMenu = document.getElementById('burger-menu');
-const menuContent = document.getElementById('menu-container');
+const menuContent = document.getElementById('menu-container-hidden');
 const banner = document.querySelectorAll('.banner');
 
-burgerMenu.addEventListener('click', function () {
+burgerMenu.addEventListener('click', function () {    
     if (burgerMenu.classList.contains('closed')) {
         // Open the burger menu
         burgerMenu.classList.remove('closed');

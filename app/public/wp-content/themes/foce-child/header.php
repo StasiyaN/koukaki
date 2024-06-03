@@ -37,17 +37,19 @@
                </div>
         </nav>
        <!-- drop menu content -->
-       <div id="menu-container">
-            <?php get_template_part('template-parts/burger-menu');?>
-
-            <ul class="burger-menu-content">
-                <li><a href="#story">Histoire</a></li>
-                <li><a href="#characters">Personnages</a></li>
-                <li><a href="#place">Lieu</a></li>
-                <li><a href="#studio">Studio Koukaki</a></li>
-                <li><a href="#oscar">Nomination Oscars</a></li>
-
-            </ul>
+       <div id="menu-container-hidden">
+            <div class="menu-container">
+                <div class = "burger-menu-logo">
+                    <img src="<?php echo get_stylesheet_directory_uri() . '/assets/burger-menu/logo-burger-menu.png';?>" alt="" id="burger-logo">
+                </div>
+                        <ul class="burger-menu">
+                            <li><a href="#story">Histoire</a></li>
+                            <li><a href="#characters">Personnages</a></li>
+                            <li><a href="#place">Lieu</a></li>
+                            <li><a href="#studio">Studio Koukaki</a></li>
+                            <li><a href="#oscar">Nomination Oscars</a></li>
+                        </ul>
+            </div>
         </div>
 
                 
