@@ -38,17 +38,30 @@
         </nav>
        <!-- drop menu content -->
        <div id="menu-container-hidden">
-            <div class="menu-container">
-                <div class = "burger-menu-logo">
-                    <img src="<?php echo get_stylesheet_directory_uri() . '/assets/burger-menu/logo-burger-menu.png';?>" alt="" id="burger-logo">
-                </div>
+            <div class="menu-container">              
                         <ul class="burger-menu">
                             <li class="story-li"><a href="#story">Histoire</a></li>
                             <li class="characters-li"><a href="#characters">Personnages</a></li>
                             <li class="place-li"><a href="#place">Lieu</a></li>
                             <li class="studio-li"><a href="#studio">Studio Koukaki</a></li>
                         </ul>
-            </div>
+                <!-- images -->
+                <!-- image logo avec le lien vers le index -->
+                <!-- ajout lien au logo burger -->
+                <!-- <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"> -->
+                    <img src="<?php echo get_stylesheet_directory_uri() . '/assets/burger-menu/logo-burger-menu.png';?>" alt="" class="burger-menu__logo">
+                <!-- </a> -->
+               
+                <!-- images theme enfant -->
+                <img src="<?php echo get_stylesheet_directory_uri() . '/assets/burger-menu/black-cat.png';?>" alt="" class="burger-menu__cats black">
+                <img src="<?php echo get_stylesheet_directory_uri() . '/assets/burger-menu/orange-cat.png';?>" alt="" class="burger-menu__cats orange">
+                <img src="<?php echo get_stylesheet_directory_uri() . '/assets/burger-menu/violet-cat.png';?>" alt=""class="burger-menu__cats violet">
+                <!-- images thème parent -->
+                <img src="<?php echo get_template_directory_uri() . '/assets/images/random_flower.png';?>" alt="" class="burger-menu__flower violet-flower">
+                <img src="<?php echo get_template_directory_uri() . '/assets/images/flower.png';?>" alt="" class="burger-menu__flower red-flower">
+                <img src="<?php echo get_template_directory_uri() . '/assets/images/hibiscus_footer.png';?>" alt="" class="burger-menu__flower hibiscus-flower">
+                <img src="<?php echo get_template_directory_uri() . '/assets/images/orchid.png';?>" alt="" class="burger-menu__flower orchid-flower">
+                <img src="<?php echo get_template_directory_uri() . '/assets/images/Sunflower.png';?>" alt="" class="burger-menu__flower sunflower-flower">
         </div>
 
                 

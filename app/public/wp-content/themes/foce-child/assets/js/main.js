@@ -65,6 +65,7 @@ const burgerMenu = document.getElementById('burger-menu');
 const menuContent = document.getElementById('menu-container-hidden');
 const banner = document.querySelectorAll('.banner');
 
+
 burgerMenu.addEventListener('click', function () {    
     if (burgerMenu.classList.contains('closed')) {
         // Open the burger menu
@@ -72,6 +73,8 @@ burgerMenu.addEventListener('click', function () {
         burgerMenu.classList.add('opened');
         burgerMenu.innerHTML = '<i class="fa-solid fa-xmark fa-3x"></i>';
         menuContent.style.display = 'block';
+        
+
       
     } else {
         // Close the burger menu

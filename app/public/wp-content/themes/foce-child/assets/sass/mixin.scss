@@ -1,0 +1,5 @@
+@mixin burgerImgPos($width, $top, $left) {
+    width: $width;
+    top: $top;
+    left: $left;
+}
