@@ -233,6 +233,7 @@
 #menu-container-hidden {
   display: none;
   overflow: hidden;
+  height: 1024px;
   animation: $animationUp;
 
 }
@@ -294,24 +295,24 @@
 
 .characters-li::before {
     content: url('../foce/assets/images/flower.png');
-    top: 500px;
+    top: 300px;
     left: 100px;
   }
   .characters-li::after {
     content: url('../foce-child/assets/burger-menu/black-cat.png');
-    top: 350px;
-    left: 1150px;
+    top: 300px;
+    left: 950px;
   }
 
   .place-li::before {
     content: url('../foce-child/assets/burger-menu/orange-cat.png');
-    top: 700px;
+    top: 500px;
     left:250px;
   }
 
   .place-li::after {
     content: url('../foce/assets/images/hibiscus_footer.png');
-    top: 650px;
+    top: 350px;
     left: 1100px;
   }
 
@@ -350,7 +351,7 @@
   text-align: center;
 }
 .burger-menu li {
-  padding-top: 35px;
+  padding-top: 15px;
 }
 .burger-menu li a {
   font-size: 54px;
@@ -358,6 +359,11 @@
   align-content: center;
   text-decoration: none;
   color: #000;
+  transition: box-shadow 0.3s ease;
+  // &::hover {
+  //   box-shadow: ;
+    
+  // }
 }
 
-//animation menu
+//
