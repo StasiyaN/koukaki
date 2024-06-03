@@ -37,33 +37,6 @@
     transform-origin: center center; /* Maintain the same transform origin for the end of the animation */
   }
 }
-@keyframes titles {
-  from {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes float {
-  0% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(-15px, 11px);
-  }
-  50% {
-    transform: translate(0, 15px);
-  }
-  75% {
-    transform: translate(15px, 10px);
-  }
-  100% {
-    transform: translate(0);
-  }
-}
 @keyframes clouds {
   0% {
     transform: translateX(0px);
@@ -73,6 +46,17 @@
   }
   100% {
     transform: translateX(-300px);
+  }
+}
+@keyframes glideUp {
+  0% {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 .banner {
@@ -197,16 +181,17 @@
 }
 
 .animated-header {
-  animation: titles 1000ms ease-in forwards;
+  display: inline-flex;
+  animation: glideUp 300ms ease-in-out;
 }
 .animated-header:nth-child(2) {
-  animation-delay: 1s;
+  animation-delay: 300ms;
 }
 .animated-header:nth-child(3) {
-  animation-delay: 1.5s;
+  animation-delay: 600ms;
 }
 .animated-header:nth-child(4) {
-  animation-delay: 2s;
+  animation-delay: 900ms;
 }
 
 .story #place {
