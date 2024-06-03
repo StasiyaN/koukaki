@@ -261,6 +261,12 @@
 
 #menu-container-hidden {
   display: none;
+  overflow: hidden;
+  animation: fadeInUp 1000ms ease-in-out;
+}
+
+.menu-container {
+  position: relative;
 }
 
 .burger-menu-logo {
@@ -283,11 +289,62 @@
 .burger-menu-logo::after {
   content: url("../foce/assets/images/Sunflower.png");
   top: 89px;
-  left: 500px;
+  left: 400px;
+}
+
+.story-li::before, .story-li::after,
+.characters-li::before,
+.characters-li::after,
+.place-li::before,
+.place-li::after,
+.studio-li::before,
+.studio-li::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+}
+
+.story-li::before {
+  content: url("../foce-child/assets/burger-menu/violet-cat.png");
+  top: 100px;
+  left: 200px;
+}
+
+.story-li::after {
+  height: 30px;
+  width: 30px;
+  content: url("../foce/assets/images/random_flower.png");
+  top: 150px;
+  left: 1300px;
+}
+
+.characters-li::before {
+  content: url("../foce/assets/images/flower.png");
+  top: 500px;
+  left: 100px;
+}
+
+.characters-li::after {
+  content: url("../foce-child/assets/burger-menu/black-cat.png");
+  top: 350px;
+  left: 1150px;
+}
+
+.place-li::before {
+  content: url("../foce-child/assets/burger-menu/orange-cat.png");
+  top: 700px;
+  left: 250px;
+}
+
+.place-li::after {
+  content: url("../foce/assets/images/hibiscus_footer.png");
+  top: 650px;
+  left: 1100px;
 }
 
 .main-navigation {
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
 }
 .main-navigation div {
   display: flex;
@@ -306,7 +363,6 @@
   width: 1440px;
   height: 944px;
   background-color: #FFF5E9;
-  animation: fadeInUp 1000ms ease-in-out;
 }
 
 .burger-menu {
@@ -319,7 +375,7 @@
 }
 
 .burger-menu li {
-  padding-top: 15px;
+  padding-top: 35px;
 }
 
 .burger-menu li a {

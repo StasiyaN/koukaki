@@ -81,7 +81,7 @@ burgerMenu.addEventListener('click', function () {
         menuContent.style.display = 'none';
     }
 
-    const burgerMenuLink = document.querySelectorAll('.burger-menu-content li a');
+    const burgerMenuLink = document.querySelectorAll('.burger-menu li a');
     console.log(burgerMenuLink);
     burgerMenuLink.forEach(link => {
         link.addEventListener('click', function () {
