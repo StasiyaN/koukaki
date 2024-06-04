@@ -5,7 +5,7 @@ get_header();
 
 <main id="primary" class="site-main">
 <!-- CHANGEMENT SECTION BANNER POUR DIV POUR MIEUX MANIPULER L ANIMATIONS DANS LA SECTION -->
-    <div class="banner">
+    <div class="banner" id="banner">
             <div class="video-container">
                 <video class="background-video" autoplay muted loop>
                     <source src="<?php echo get_stylesheet_directory_uri() . '/assets/video/banner-video.mp4'; ?>" type="video/mp4" class="banner-video">

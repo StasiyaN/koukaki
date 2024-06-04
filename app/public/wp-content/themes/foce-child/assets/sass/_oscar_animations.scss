@@ -1,0 +1,55 @@
+
+//section Oscar
+#oscar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 250px;
+    margin-bottom: 125.28px;
+    animation: $animationUp;
+    
+  }
+  
+  .oscar__article {
+    box-sizing: content-box;
+    width: 825px; // contre le maquette
+    height: 200.02px;
+    
+  }
+  
+  
+  .oscar__title {
+    font-family: "Quicksand";
+    font-weight: 700;
+    font-size: 42px;      
+    line-height: 1.2;
+    background-image: url("../foce-child/assets/images/oscars-bg-image.png");
+    background-size: 800px 260px; //contre le maquette
+    letter-spacing: -2%;
+    width: 675px;
+    //margin-top: 30px;
+    
+    &::before {
+      content: url("../foce/assets/images/Sunflower.png");
+      width: 216px;
+      height: auto;
+      position: absolute;
+      top: -200px;
+      left: 95px;
+      
+    }
+  }
+
+  #studio {
+    div::after{
+      content: url('../foce/assets/images/Orchid.png');
+      position: absolute;
+      width: 172px;
+      height: auto;
+      left: 1334px;
+      top: 400px;
+    }
+  }
+  

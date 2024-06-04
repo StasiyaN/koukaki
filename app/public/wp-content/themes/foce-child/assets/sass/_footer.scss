@@ -1,0 +1,7 @@
+.site-footer {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+  

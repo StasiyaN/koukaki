@@ -59,38 +59,6 @@
     transform: translateY(0);
   }
 }
-.banner {
-  position: relative;
-  background-image: none;
-  overflow: hidden;
-  top: -80px;
-}
-.banner img {
-  margin-top: 15px;
-  width: 45%;
-}
-
-.video-container {
-  position: relative;
-  max-width: 1440px;
-  height: 806px;
-  top: 80px;
-}
-
-.background-video {
-  z-index: -1;
-  animation: fadeInDown 1000ms ease-in-out;
-}
-
-.fallback-image {
-  display: none;
-}
-
-.logo-img {
-  position: absolute;
-  animation: fadeInUp 1000ms ease-in-out;
-}
-
 .story {
   animation: fadeInUp 1000ms ease-in-out;
 }
@@ -165,6 +133,38 @@
   top: 400px;
 }
 
+.banner {
+  position: relative;
+  background-image: none;
+  overflow: hidden;
+  top: -80px;
+}
+.banner img {
+  margin-top: 15px;
+  width: 45%;
+}
+
+.video-container {
+  position: relative;
+  max-width: 1440px;
+  height: 806px;
+  top: 80px;
+}
+
+.background-video {
+  z-index: -1;
+  animation: fadeInDown 1000ms ease-in-out;
+}
+
+.fallback-image {
+  display: none;
+}
+
+.logo-img {
+  position: absolute;
+  animation: fadeInUp 1000ms ease-in-out;
+}
+
 .site-footer::before, .site-footer::after {
   display: none;
 }
@@ -192,29 +192,6 @@
 }
 .animated-header:nth-child(4) {
   animation-delay: 900ms;
-}
-
-.story #place {
-  background-image: url("../foce-child/assets/images/Studio_Koukaki-image_place.png");
-  position: relative;
-}
-
-.cloud__little {
-  position: absolute;
-  left: 793px;
-  top: 248px;
-  filter: blur(20px);
-}
-
-.cloud__big {
-  position: absolute;
-  left: 1031px;
-  top: 65px;
-  filter: blur(20px);
-}
-
-.clouds-animated {
-  animation: clouds 1000ms linear forwards;
 }
 
 .story #characters div {
@@ -363,6 +340,29 @@ img.burger-menu__logo {
   width: 155px;
   top: 43px;
   left: 643px;
+}
+
+.story #place {
+  background-image: url("../foce-child/assets/images/Studio_Koukaki-image_place.png");
+  position: relative;
+}
+
+.cloud__little {
+  position: absolute;
+  left: 793px;
+  top: 248px;
+  filter: blur(20px);
+}
+
+.cloud__big {
+  position: absolute;
+  left: 1031px;
+  top: 65px;
+  filter: blur(20px);
+}
+
+.clouds-animated {
+  animation: clouds 1000ms linear forwards;
 }
 
 /*# sourceMappingURL=style.css.map */

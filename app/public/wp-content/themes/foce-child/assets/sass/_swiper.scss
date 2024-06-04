@@ -1,0 +1,43 @@
+//SWIPER
+
+.story #characters div {
+    flex: none;
+  }
+  
+  .story #characters h3 {
+    background-position: left;
+    text-align: left;
+    margin-left: 100px;
+    padding-left: 45px;
+  }
+  
+  
+  
+  .swiper {
+    max-width: 1266px;
+    height: 500px;
+    // padding-top: 50px;
+    //padding-bottom: 50px;
+    // margin-left: 120px;
+    overflow: hidden;
+    
+  }
+  
+  
+  
+  .swiper-slide {
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .swiper-slide img {
+    display: block;
+  }
+  
+  .swiper-pagination {
+    padding-top: 0;
+    
+    
+  }
+  
