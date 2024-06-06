@@ -9,15 +9,15 @@
     
   }
   
-  //CHECK WHAT IS THIS?????
   .main-navigation {
     width: 100%;
     max-width: 1440px;
     div {
+      height: 80px;
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      gap: 25%;
+      gap: 400px;
       cursor: pointer;
     }
     span {

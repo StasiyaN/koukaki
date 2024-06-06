@@ -84,18 +84,18 @@ burgerMenu.addEventListener('click', function () {
         menuContent.style.display = 'none';
     }
 
-    const burgerMenuLink = document.querySelectorAll('.burger-menu li a');
-    console.log(burgerMenuLink);
-    burgerMenuLink.forEach(link => {
-        link.addEventListener('click', function () {
-            menuContent.style.display = 'none';
-            burgerMenu.classList.remove('opened');
-            burgerMenu.classList.add('closed');
-            burgerMenu.innerHTML = '<i class="fa-solid fa-bars fa-3x"></i>';
-        });
     });
 
-     });
+       // const burgerMenuLink = document.querySelectorAll('.burger-menu li a');
+    // console.log(burgerMenuLink);
+    // burgerMenuLink.forEach(link => {
+    //     link.addEventListener('click', function () {
+    //         menuContent.style.display = 'none';
+    //         burgerMenu.classList.remove('opened');
+    //         burgerMenu.classList.add('closed');
+    //         burgerMenu.innerHTML = '<i class="fa-solid fa-bars fa-3x"></i>';
+    //     });
+    // });
 
 
 
