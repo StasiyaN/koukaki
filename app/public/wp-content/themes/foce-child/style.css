@@ -225,24 +225,28 @@
   padding-top: 0;
 }
 
-.main-navigation {
-  width: 100%;
-  max-width: 1440px;
+.navbar__links {
+  margin: 0 40px;
 }
-.main-navigation div {
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  opacity: 1;
+  display: block;
+}
+
+.navbar {
+  position: relative;
+  width: 100%;
   height: 80px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 400px;
   cursor: pointer;
-}
-.main-navigation span {
-  margin: 0 60px;
-}
-
-.burger-menu__close {
-  visibility: hidden;
 }
 
 .burger-menu {
@@ -252,8 +256,8 @@
   background-color: #FFF5E9;
   top: 80px;
   left: 0;
-  opacity: 0;
-  visibility: hidden;
+  display: none;
+  animation: fadeInDown 1000ms ease-in-out;
 }
 
 .burger-menu__body {

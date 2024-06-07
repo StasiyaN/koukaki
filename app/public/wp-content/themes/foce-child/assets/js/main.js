@@ -61,6 +61,24 @@ document.addEventListener('DOMContentLoaded', function() {
    
 
 // BURGER MENU
+const openMenuBtn = document.querySelector('.open-menu');
+const closeMenuBtn = document.querySelector('.close-menu');
+const burgerContent = document.getElementById('burger-menu');
+
+//const body = document.querySelector('.body');  //to control the scroll of the elements in the body
+//let unlock = true; // for avoiding double clicks
+
+openMenuBtn.onclick = function () {
+    burgerContent.style.display = 'block';
+    openMenuBtn.classList.remove('visible');
+    openMenuBtn.classList.add('hidden');
+    closeMenuBtn.classList.remove('hidden');
+    closeMenuBtn.classList.add('visisble');
+};
+
+closeMenuBtn.onclick = function () {
+    burgerContent.style.display = "none";
+};
 
 
 
@@ -68,7 +86,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-    });
+
+});
 
 
 

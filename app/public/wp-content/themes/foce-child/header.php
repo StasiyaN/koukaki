@@ -33,14 +33,16 @@
         <!-- ajout du class pour ul + ajout de nouveau div pour les lien de burger-menu-->
                 <div class = "navbar">
                     <h1 class="site-title"> <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-                    <a href=""><i class="fa-solid fa-bars fa-3x"></i></a>
+                        <div class="navbar__links">
+                            <a href="#burger-menu" class="btn "><i class="fa-solid fa-bars fa-3x open-menu visible"></i></a>
+                            <a href=""class="btn"><i class="fa-solid fa-xmark fa-3x close-menu hidden"></i></a>    
+                        </div>
                 </div>
         </nav>
        <!-- drop menu content -->
        <div id="burger-menu" class="burger-menu">
             <div class="burger-menu__body">  
-                <div class="burger-menu__content">
-                    <a href=""class="burger-menu__close"><i class="fa-solid fa-xmark fa-3x"></i></a>          
+                <div class="burger-menu__content">                           
                             <ul class="burger-menu__text">
                                 <li class="story-li"><a href="#story">Histoire</a></li>
                                 <li class="characters-li"><a href="#characters">Personnages</a></li>

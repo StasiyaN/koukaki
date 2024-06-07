@@ -1,6 +1,5 @@
-.burger-menu__close {
-  visibility: hidden;
-}
+//manipulation de btn ouvrir/fermer
+
 
 .burger-menu {
   position: fixed;
@@ -9,8 +8,8 @@
   background-color: #FFF5E9;
   top: 80px;
   left: 0;
-  opacity: 0;
-  visibility: hidden;
+  display: none;
+  animation: $animationDown;
 }
 
 .burger-menu__body {
