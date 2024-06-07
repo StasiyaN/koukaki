@@ -44,10 +44,10 @@
             <div class="burger-menu__body">  
                 <div class="burger-menu__content">                           
                             <ul class="burger-menu__text">
-                                <li class="story-li"><a href="#story">Histoire</a></li>
-                                <li class="characters-li"><a href="#characters">Personnages</a></li>
-                                <li class="place-li"><a href="#place">Lieu</a></li>
-                                <li class="studio-li"><a href="#studio">Studio Koukaki</a></li>
+                                <li><a href="#story" class="link">Histoire</a></li>
+                                <li><a href="#characters" class="link">Personnages</a></li>
+                                <li><a href="#place" class="link">Lieu</a></li>
+                                <li><a href="#studio" class="link">Studio Koukaki</a></li>
                             </ul>
                     <!-- images -->
                     <!-- image logo avec le lien vers le index -->

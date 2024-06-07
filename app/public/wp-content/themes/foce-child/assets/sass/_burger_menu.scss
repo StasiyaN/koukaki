@@ -4,7 +4,7 @@
 .burger-menu {
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: 1024px;
   background-color: #FFF5E9;
   top: 80px;
   left: 0;
@@ -88,5 +88,5 @@ img.sunflower-flower {
   @include burgerImgPos(216px, 60px, 1000px);
 }
 img.burger-menu__logo {
-  @include burgerImgPos(155px, 43px, 643px);
+  @include burgerImgPos(155px, 43px, 620px);
 }
