@@ -26,5 +26,6 @@
   }
   .logo-img {
     position: absolute;
-    animation: $animationUp;
+    animation: float 2s ease-in-out infinite, $animationUp;
+    
   }
