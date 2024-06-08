@@ -1,4 +1,4 @@
-//manipulation de btn ouvrir/fermer
+
 
 
 .burger-menu {
@@ -6,7 +6,6 @@
   width: 100%;
   height: 1024px;
   background-color: #FFF5E9;
-  top: 80px;
   left: 0;
   display: none;
   animation: $animationDown;
@@ -31,10 +30,11 @@
   width: 100%;
   list-style: none;
   background: #FFF5E9; 
-  top: 80px; 
-  margin-left: 430px;
-  margin-top: 208px;
+  //top: 208px; 
+  margin-left: 480px;
+  margin-top: 170px;
 }
+
 .burger-menu__text li {
   display: flex;
   justify-content: center;
@@ -82,11 +82,11 @@ img.hibiscus-flower {
   @include burgerImgPos(626px, 350px, 1100px);
 }
 img.orchid-flower {
-  @include burgerImgPos(172px, 50px, -70px);
+  @include burgerImgPos(172px, 35px, -70px);
 }
 img.sunflower-flower {
-  @include burgerImgPos(216px, 60px, 1000px);
+  @include burgerImgPos(216px, 60px, 1039px);
 }
 img.burger-menu__logo {
-  @include burgerImgPos(155px, 43px, 620px);
+  @include burgerImgPos(207px, 0px, 630px);
 }

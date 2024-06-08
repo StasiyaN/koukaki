@@ -33,14 +33,11 @@
         <!-- ajout du class pour ul + ajout de nouveau div pour les lien de burger-menu-->
                 <div class = "navbar">
                     <h1 class="site-title"> <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-                        <div class="navbar__links">
-                            <a href="#burger-menu" class="btn "><i class="fa-solid fa-bars fa-3x open-menu visible"></i></a>
-                            <a href=""class="btn"><i class="fa-solid fa-xmark fa-3x close-menu hidden"></i></a>    
+                        <div class="menu-icon">
+                            <span></span>
                         </div>
                 </div>
-        </nav>
-       <!-- drop menu content -->
-       <div id="burger-menu" class="burger-menu">
+                <div id="burger-menu" class="burger-menu">
             <div class="burger-menu__body">  
                 <div class="burger-menu__content">                           
                             <ul class="burger-menu__text">
@@ -74,6 +71,9 @@
         </div>
 
                 
+
+        </nav>
+       
           
 		
 	</header><!-- #masthead -->
