@@ -1,5 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log('DOMContentLoaded'); 
+    //burger menu
+    document.querySelector('.menu-icon').addEventListener('click', function () {
+        this.classList.toggle('active');
+        document.querySelector('.burger-menu').classList.toggle('open');
+    })
 
 
     // // BURGER MENU
