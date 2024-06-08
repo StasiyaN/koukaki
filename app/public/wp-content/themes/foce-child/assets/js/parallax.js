@@ -1,32 +1,56 @@
 document.addEventListener('DOMContentLoaded', function () {
-
-// // Select the video and logo elements
-// const banner = document.getElementById('banner');
-// const bannerVideo = document.querySelector('.banner-video');
-// const logoImage = document.querySelector('.logo-img');
-// console.log(bannerVideo);
-// console.log(logoImage);
-
-// banner.addEventListener ('scroll', function () {
-//     var y = banner.scrollY;
-//     bannerVideo.style.bottom = y * 0.5 + 'px';
-//     logoImage.style.bottom = y * -1.2 + 'px';
-// });
+//declation de variables
+    const banner = document.getElementById('banner');
+    const videoContainer = banner.querySelector('.banner-video');
+    const logo = banner.querySelector('.logo-img');
+    let scrollY = window.scrollY; // Initial scroll position
 
 
 
-const banner = document.getElementById('banner');
-const videoContainer = banner.querySelector('.banner-video');
-const logo = banner.querySelector('.logo-img');
-const scrollY = window.scrollY; // Initial scroll position
+//functions
+// Function to handle scroll event
+function handleScroll() {
+    // Get the place section
+    const spans = document.querySelectorAll('h2 span, h3 span');
+    spans.forEach(span => {
+        // Add your logic to add or remove classes based on scroll position
+        if (isElementInViewport(span)) {
+            span.classList.add('animated-header');
+        } else {
+            span.classList.remove('animated-header');
+        }
+    });
+    
+        parallax();
+      
+    
+}
 
-window.addEventListener('scroll', function() {
+// Function to check if an element is in the viewport
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+function parallax () {
   const newScrollY = window.scrollY; // Update scroll position
   const movementRatio = (newScrollY - scrollY) / window.innerHeight; // Calculate movement ratio
-  videoContainer.style.transform = `translateY(${movementRatio *100}px)`; // Apply parallax effect with a multiplier
+  videoContainer.style.transform = `translateY(${movementRatio *80}px)`; // Apply parallax effect with a multiplier
   logo.style.transform = `translateY(${movementRatio * 180}px)`; // Apply parallax effect with a multiplier
-  scrollY = newScrollY; // Update scrollY for next scroll event
+ // scrollY = newScrollY; // Update scrollY for next scroll event
+ 
+}
+
+
+ window.addEventListener('scroll', handleScroll);
+
 });
 
 
-});
+
+
