@@ -30,9 +30,7 @@ get_header();
             <?php get_template_part('template-parts/slider');?>
             </div>
         </article>
-       
-       
-  
+   
     <article id="place">
         <div>
             <h3><span>Le</span> <span>Lieu</span></h3>
