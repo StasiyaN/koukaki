@@ -27,11 +27,7 @@
 
 	<header id="masthead" class="site-header">
 		<nav id="site-navigation" class="main-navigation">
-
-        <!-- suppression de button menu toggle -->
-        <!-- creation du menu burger -->
-        <!-- ajout du class pour ul + ajout de nouveau div pour les lien de burger-menu-->
-                <div class = "navbar">
+               <div class = "navbar">
                     <h1 class="site-title"> <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
                         <div class="menu-icon">
                             <span></span>
