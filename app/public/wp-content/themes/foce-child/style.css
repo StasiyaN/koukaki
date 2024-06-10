@@ -8,6 +8,15 @@
     transform: translateY(0);
   }
 }
+@keyframes faceInUpReverse {
+  from {
+    opacity: 1;
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 @keyframes fadeInDown {
   from {
     opacity: 0;
@@ -15,15 +24,6 @@
   }
   to {
     opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes pText {
-  from {
-    opacity: 1;
-    transform: translateY(-200px);
-  }
-  to {
     transform: translateY(0);
   }
 }
@@ -60,11 +60,38 @@
   }
 }
 @keyframes float {
-  0%, 100% {
-    transform: translateY(0);
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(6px, -5px);
+  }
+  20% {
+    transform: translate(15px, 3px);
+  }
+  30% {
+    transform: translate(5px, -2px);
+  }
+  40% {
+    transform: translate(9px, 1px);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translate(5px, -10px);
+  }
+  60% {
+    transform: translate(3px, -8px);
+  }
+  70% {
+    transform: translate(0px, -4px);
+  }
+  80% {
+    transform: translate(5px, 0px);
+  }
+  90% {
+    transform: translate(2px, -5px);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }
 article {
@@ -72,29 +99,29 @@ article {
 }
 
 .story {
-  animation: fadeInUp 1000ms ease-in-out;
+  animation: fadeInUp 1000ms ease-in-out 1;
 }
 .story p {
-  animation: pText 1000ms ease-in-out;
+  animation: fadeInUpRevers 1000ms ease-in-out 1;
 }
 
 #place {
-  animation: fadeInUp 1000ms ease-in-out;
+  animation: fadeInUp 1000ms ease-in-out 1;
 }
 #place p {
-  animation: pText 1000ms ease-in-out;
+  animation: fadeInUpRevers 1000ms ease-in-out 1;
 }
 
 #studio {
-  animation: fadeInUp 1000ms ease-in-out;
+  animation: fadeInUp 1000ms ease-in-out 1;
 }
 #studio p {
-  animation: pText 1000ms ease-in-out;
+  animation: fadeInUpRevers 1000ms ease-in-out 1;
 }
 
 #characters {
   padding-top: 40px;
-  animation: fadeInUp 1000ms ease-in-out;
+  animation: fadeInUp 1000ms ease-in-out 1;
 }
 #characters h3 {
   margin-bottom: 0px;
@@ -108,7 +135,7 @@ article {
   justify-content: center;
   margin-top: 250px;
   margin-bottom: 125.28px;
-  animation: fadeInUp 1000ms ease-in-out;
+  animation: fadeInUp 1000ms ease-in-out 1;
 }
 
 .oscar__article {
@@ -158,6 +185,7 @@ article {
 
 .video-container {
   position: relative;
+  width: 100%;
   max-width: 1440px;
   height: 806px;
   top: 80px;
@@ -174,7 +202,7 @@ article {
 
 .logo-img {
   position: absolute;
-  animation: float 2s ease-in-out infinite, fadeInUp 1000ms ease-in-out;
+  animation: fadeInUp 1000ms ease-in-out 1;
 }
 
 .site-footer::before, .site-footer::after {
@@ -243,11 +271,11 @@ article {
 
 .burger-menu {
   position: fixed;
-  width: 100%;
+  width: 1440px;
   height: 100%;
   background-color: #FFF5E9;
   top: 80px;
-  left: 0;
+  margin: 0 auto;
   display: none;
   justify-content: center;
   align-items: center;
@@ -259,7 +287,7 @@ article {
   width: 100%;
   min-height: 100vh;
   display: flex;
-  position: fixed;
+  position: relative;
   padding: 30px 10px;
 }
 
@@ -381,6 +409,7 @@ img.burger-menu__logo {
 
 .main-navigation {
   display: flex;
+  margin: 0 auto;
 }
 
 .navbar {

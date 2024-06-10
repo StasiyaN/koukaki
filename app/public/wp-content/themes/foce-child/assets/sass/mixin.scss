@@ -4,8 +4,5 @@
     left: $left;
 }
 
-@mixin floating-effect($duration: 2s, $timing-function: ease-in-out, $delay: 0s) {
-    animation: float $duration $timing-function infinite $delay;
-  }
 
   

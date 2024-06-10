@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         burgerMenuContent.classList.remove('open');
         document.body.classList.remove('lock');
     });
-});
+
 //*********************************************************************** */
 //transition fluide vers les section
 
@@ -44,3 +44,7 @@ anchors.forEach(anchor => {
 
 });
 
+//*******************************************/
+
+
+});

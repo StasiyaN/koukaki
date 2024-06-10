@@ -1,7 +1,8 @@
-$animationUp: fadeInUp 1000ms ease-in-out;
+$animationUp: fadeInUp 1000ms ease-in-out 1;
 $animationDown: fadeInDown 1000ms ease-in-out;
-$animationText: pText 1000ms ease-in-out;
+$animationText: fadeInUpRevers 1000ms ease-in-out 1;
 $rotationFlower: rotation 10000ms linear infinite;
 $animationHeader: titles 1000ms ease-in forwards;
 $animationClouds: clouds 1000ms linear forwards;
-$headerFloat: float 2s ease-in-out infinite;
+$imageFloat: float 8s ease-in-out infinite;
+
