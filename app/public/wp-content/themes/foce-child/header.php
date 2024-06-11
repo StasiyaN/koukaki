@@ -42,6 +42,7 @@
                                         <li><a href="#characters"">Personnages</a></li>
                                         <li><a href="#place">Lieu</a></li>
                                         <li><a href="#studio">Studio Koukaki</a></li>
+                                        <p><a href="#">STUDIO KOUKAKI</a></p>
                                     </ul>
                                         <!-- images -->
                                         <!-- image logo avec le lien vers le index -->
@@ -61,6 +62,7 @@
                                         <img src="<?php echo get_template_directory_uri() . '/assets/images/orchid.png';?>" alt="" class="burger-menu__flower orchid-flower">
                                         <img src="<?php echo get_template_directory_uri() . '/assets/images/Sunflower.png';?>" alt="" class="burger-menu__flower sunflower-flower">
                                 <!-- </div>  -->
+                                
                             </div> 
                         </div>
                     </div>

@@ -301,7 +301,7 @@ article {
 .burger-menu ul {
   position: relative;
   top: 170px;
-  left: 451px;
+  left: 485px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -377,15 +377,21 @@ img.sunflower-flower {
 img.burger-menu__logo {
   width: 180px;
   top: 0px;
-  left: 570px;
+  left: 610px;
 }
 
 .burger-menu__cats {
+  line-height: 0;
   animation: float 8s ease-in-out infinite;
 }
 
 .burger-menu__flower {
+  line-height: 0;
   animation: rotation 10000ms linear infinite;
+}
+
+.burger-menu p {
+  margin-top: 80px;
 }
 
 .story #place {
