@@ -31,21 +31,16 @@
   z-index: 1;
 }
 
-.burger-menu__text {
+
+.burger-menu ul {
+  position: relative;
+  top: 170px;
+  left: 451px;
   display: flex;
   flex-direction: column;
   width: 100%;
   list-style: none;
   background: #FFF5E9; 
-  //top: 208px; 
-  margin-left: 480px;
-  margin-top: 170px;
-}
-
-.burger-menu ul {
-  position: relative;
-  top: 208px;
-  left: 451px;
 }
 
 // .burger-menu__text li {
@@ -80,7 +75,7 @@ img.black {
   @include burgerImgPos (150px, 305px, 1030px);
 }
 img.orange {
-  @include burgerImgPos(105px, 550px, 70px);
+  @include burgerImgPos(105px, 510px, 70px);
 }
 img.violet {
   @include burgerImgPos(110px, 200px, 250px);
@@ -89,17 +84,25 @@ img.violet-flower {
   @include burgerImgPos(63px, 250px, 1385px);
 }
 img.red-flower {
-  @include burgerImgPos(70px, 400px, 150px);
+  @include burgerImgPos(50px, 400px, 150px);
 }
 img.hibiscus-flower {
   @include burgerImgPos(626px, 350px, 1100px);
 }
 img.orchid-flower {
-  @include burgerImgPos(172px, 35px, -70px);
+  @include burgerImgPos(172px, 25px, -70px);
 }
 img.sunflower-flower {
-  @include burgerImgPos(216px, 60px, 1039px);
+  @include burgerImgPos(216px, 40px, 1039px);
 }
 img.burger-menu__logo {
-  @include burgerImgPos(207px, 0px, 570px);
+  @include burgerImgPos(180px, 0px, 570px);
+}
+
+.burger-menu__cats {
+  animation: $imageFloat;
+}
+
+.burger-menu__flower {
+  animation: $rotationFlower;
 }
