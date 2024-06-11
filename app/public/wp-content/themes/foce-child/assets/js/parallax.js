@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const videoContainer = banner.querySelector('.banner-video');
     const logo = banner.querySelector('.logo-img');
     let scrollY = window.scrollY; // Initial scroll position
+    let lastScrollY = window.scrollY; 
 
 //declarations de variables nuages
 const cloudLittle = document.querySelector('.cloud__little');
@@ -44,19 +45,42 @@ function isElementInViewport(el) {
     );
 }
 
-function parallax () {
-  const newScrollY = window.scrollY; // Update scroll position
-  const movementRatio = (newScrollY - scrollY) / window.innerHeight; // Calculate movement ratio
-  videoContainer.style.transform = `translateY(${movementRatio *80}px)`; // Apply parallax effect with a multiplier
-  logo.style.transform = `translateY(${movementRatio * 180}px)`; // Apply parallax effect with a multiplier
- // scrollY = newScrollY; // Update scrollY for next scroll event
- }
+// function parallax () {
+//   const newScrollY = window.scrollY; // Update scroll position
+//   const movementRatio = (newScrollY - scrollY) / window.innerHeight; // Calculate movement ratio
+//   videoContainer.style.transform = `translateY(${movementRatio *80}px)`; // Apply parallax effect with a multiplier
+//   logo.style.transform = `translateY(${movementRatio * 180}px)`; // Apply parallax effect with a multiplier
+//  // scrollY = newScrollY; // Update scrollY for next scroll event
+//  }
 
- //clouds
+//  //clouds
+
+function parallax() {
+    const newScrollY = window.scrollY; // Update scroll position
+    const newScrollX = window.scrollY;
+    const movementRatio = newScrollY / window.innerHeight; // Calculate movement ratio
+    const movementXRation = newScrollX/window.innerHeightHeight;
+
+    videoContainer.style.transform = `translateY(${movementRatio * 80}px)`; // Apply parallax effect with a multiplier
+    logo.style.transform = `translateY(${movementRatio * 180}px)`; // Apply parallax effect with a multiplier
+
+ 
+
+   // Calculate cloud movement based on the change in scroll position
+   const scrollDelta = newScrollY - lastScrollY; // Difference in scroll position
+   const cloudMovement = Math.min(Math.max(scrollDelta * 0.5, -300), 300); // Ensure cloud movement is capped between -300 and 300
+
+   // Update cloud positions dynamically
+   const cloudLittleCurrentPosition = parseFloat(getComputedStyle(cloudLittle).transform.split(',')[4]) || 0;
+   const cloudBigCurrentPosition = parseFloat(getComputedStyle(cloudBig).transform.split(',')[4]) || 0;
+   
+   cloudLittle.style.transform = `translateX(${cloudLittleCurrentPosition + cloudMovement}px)`; // Move the little cloud
+   cloudBig.style.transform = `translateX(${cloudBigCurrentPosition + cloudMovement}px)`; // Move the big cloud
+
+   lastScrollY = newScrollY;
 
 
-
-
+}
  
 window.addEventListener('scroll', handleScroll);
 
