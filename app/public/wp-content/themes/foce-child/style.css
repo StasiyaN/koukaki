@@ -273,14 +273,14 @@ article {
 .burger-menu {
   position: fixed;
   width: 1440px;
-  height: 100%;
+  height: 100vh;
   background-color: #FFF5E9;
   top: 80px;
   margin: 0 auto;
   display: none;
   justify-content: center;
   align-items: center;
-  overflow: auto;
+  overflow: hidden;
   animation: fadeInDown 1000ms ease-in-out;
 }
 
@@ -382,7 +382,7 @@ img.sunflower-flower {
 img.burger-menu__logo {
   width: 207px;
   top: 0px;
-  left: 630px;
+  left: 570px;
 }
 
 .story #place {

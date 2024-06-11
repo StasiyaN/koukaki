@@ -1,14 +1,19 @@
 document.addEventListener('DOMContentLoaded', function () {
-//declation de variables
+//declation de variables banner
     const banner = document.getElementById('banner');
     const videoContainer = banner.querySelector('.banner-video');
     const logo = banner.querySelector('.logo-img');
     let scrollY = window.scrollY; // Initial scroll position
 
+//declarations de variables nuages
+const cloudLittle = document.querySelector('.cloud__little');
+const cloudBig = document.querySelector('.cloud__big');    
+
+
 
 
 //functions
-// Function to handle scroll event
+// Function to handle  entire scroll event
 function handleScroll() {
     // Get the place section
     const spans = document.querySelectorAll('h2 span, h3 span');
@@ -22,6 +27,8 @@ function handleScroll() {
     });
     
         parallax();
+
+    
       
     
 }
@@ -43,11 +50,16 @@ function parallax () {
   videoContainer.style.transform = `translateY(${movementRatio *80}px)`; // Apply parallax effect with a multiplier
   logo.style.transform = `translateY(${movementRatio * 180}px)`; // Apply parallax effect with a multiplier
  // scrollY = newScrollY; // Update scrollY for next scroll event
+ }
+
+ //clouds
+
+
+
+
  
-}
+window.addEventListener('scroll', handleScroll);
 
-
- window.addEventListener('scroll', handleScroll);
 
 });
 
