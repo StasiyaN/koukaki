@@ -314,7 +314,7 @@ article {
 
 img.black {
   width: 150px;
-  top: 305px;
+  top: 400px;
   left: 1030px;
 }
 
@@ -364,10 +364,6 @@ img.burger-menu__logo {
   width: 180px;
   top: 0px;
   left: 610px;
-}
-
-.burger-menu__cats {
-  line-height: 0;
 }
 
 .burger-menu__flower {
@@ -475,15 +471,48 @@ img.burger-menu__logo {
 }
 
 .violet {
-  animation: float 5s ease-in-out forwards infinite;
+  animation: cat1 2s ease-in-out infinite alternate;
 }
-
-.black {
-  animation: float 5s ease-in-out backwards infinite;
+@keyframes cat1 {
+  0% {
+    transform: translate(-50%, -100%) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, -90%) rotate(5deg);
+  }
+  100% {
+    transform: translate(-50%, -95%) rotate(0deg);
+  }
 }
 
 .orange {
-  animation: float 5s ease-in-out both infinite;
+  animation: cat2 3s ease-in-out infinite alternate;
+}
+@keyframes cat2 {
+  0% {
+    transform: translate(-50%, -100%) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, -80%) rotate(-13deg);
+  }
+  100% {
+    transform: translate(-50%, -90%) rotate(0deg);
+  }
+}
+
+.black {
+  animation: cat3 2s ease-in-out infinite alternate;
+}
+@keyframes cat3 {
+  0% {
+    transform: translate(-50%, -100%) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, -85%) rotate(8deg);
+  }
+  100% {
+    transform: translate(-50%, -95%) rotate(0deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

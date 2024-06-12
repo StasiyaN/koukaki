@@ -1,13 +1,11 @@
 .violet {
- 
-    animation: $animationCat1;
-}
-
-.black {
- 
-    animation: $animationCat2;
-}
-.orange {
+    @include catFloat(cat1, -100%, -90%, -95%, 5deg, 2s, ease-in-out);
+  }
   
-    animation: $animationCat3;
-}
+  .orange {
+    @include catFloat(cat2, -100%, -80%, -90%, -13deg, 3s, ease-in-out);
+  }
+  
+  .black {
+    @include catFloat(cat3, -100%, -85%, -95%, 8deg, 2s, ease-in-out);
+  }

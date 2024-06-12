@@ -4,27 +4,19 @@
     left: $left;
 }
 
-// @mixin catFloatDirection ($direction) {
-//     animation-fill-mode: $direction;
-// }
 
-
-// @mixin catFloat ($animationCat, $translateYStart, $translateYMiddle, $translateYEnd, $rotateMiddle, $duration) {
-//     @keyframes #{$animationCat} {
-//       0% {
-//         transform: translate(-50%, #{$translateYStart}) rotate(0deg);
-//       }
-//       50% {
-//         transform: translate(-50%, #{$translateYMiddle}) rotate(#{$rotateMiddle});
-//       }
-//       100% {
-//         transform: translate(-50%, #{$translateYEnd}) rotate(0deg);
-//       }
-//     }
-//     animation: #{$animationCat} #{$duration} infinite;
-// }
-    
-
-  
-  
-  
+@mixin catFloat ($animationCat, $translateYStart, $translateYMiddle, $translateYEnd, $rotateMiddle, $duration, $timingFunction) {
+    @keyframes #{$animationCat} {
+        0% {
+            transform: translate(-50%, #{$translateYStart}) rotate(0deg);
+        }
+        50% {
+            transform: translate(-50%, #{$translateYMiddle}) rotate(#{$rotateMiddle});
+        }
+        100% {
+            transform: translate(-50%, #{$translateYEnd}) rotate(0deg);
+        }
+    }
+    animation: #{$animationCat} #{$duration} #{$timingFunction} infinite alternate;
+}
+ 

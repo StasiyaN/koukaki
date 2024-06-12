@@ -72,7 +72,7 @@
   z-index: 1;
 }
 img.black {
-  @include burgerImgPos (150px, 305px, 1030px);
+  @include burgerImgPos (150px, 400px, 1030px);
 }
 img.orange {
   @include burgerImgPos(105px, 510px, 70px);
@@ -97,10 +97,6 @@ img.sunflower-flower {
 }
 img.burger-menu__logo {
   @include burgerImgPos(180px, 0px, 610px);
-}
-
-.burger-menu__cats {
-  line-height: 0;
 }
 
 .burger-menu__flower {
