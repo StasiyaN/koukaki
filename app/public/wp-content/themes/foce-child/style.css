@@ -61,41 +61,27 @@
 }
 @keyframes float {
   0% {
-    transform: translate(0, 0);
-  }
-  10% {
-    transform: translate(6px, -5px);
-  }
-  20% {
-    transform: translate(15px, 3px);
-  }
-  30% {
-    transform: translate(5px, -2px);
-  }
-  40% {
-    transform: translate(9px, 1px);
+    transform: translate(-50%, -100%) rotate(0deg);
   }
   50% {
-    transform: translate(5px, -10px);
-  }
-  60% {
-    transform: translate(3px, -8px);
-  }
-  70% {
-    transform: translate(0px, -4px);
-  }
-  80% {
-    transform: translate(5px, 0px);
-  }
-  90% {
-    transform: translate(2px, -5px);
+    transform: translate(-50%, -90%) rotate(-5deg);
   }
   100% {
-    transform: translate(0, 0);
+    transform: translate(-50%, -95%) rotate(0deg);
   }
 }
+#page {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 article {
   padding-top: 30px;
+}
+
+.main-navigation a {
+  display: block;
+  white-space: nowrap;
 }
 
 .story {
@@ -382,7 +368,6 @@ img.burger-menu__logo {
 
 .burger-menu__cats {
   line-height: 0;
-  animation: float 8s ease-in-out infinite;
 }
 
 .burger-menu__flower {
@@ -427,13 +412,13 @@ img.burger-menu__logo {
   width: 100%;
   height: 80px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
+  gap: 13%;
 }
 
 .site-title {
   cursor: pointer;
-  margin-left: 540px;
 }
 
 .menu-icon {
@@ -487,6 +472,18 @@ img.burger-menu__logo {
 .menu-icon.active::after {
   bottom: 50%;
   transform: rotate(45deg) translate(0, 50%);
+}
+
+.violet {
+  animation: float 5s ease-in-out forwards infinite;
+}
+
+.black {
+  animation: float 5s ease-in-out backwards infinite;
+}
+
+.orange {
+  animation: float 5s ease-in-out both infinite;
 }
 
 /*# sourceMappingURL=style.css.map */

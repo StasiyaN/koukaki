@@ -13,13 +13,13 @@
     width: 100%;
     height: 80px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    gap: 13%;
 }
 
 .site-title {
     cursor: pointer;
-    margin-left: 540px;
 }
 
 .menu-icon {
