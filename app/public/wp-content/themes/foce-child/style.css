@@ -82,6 +82,7 @@ article {
 .main-navigation a {
   display: block;
   white-space: nowrap;
+  margin: 0 auto;
 }
 
 .story {
@@ -233,6 +234,7 @@ article {
 }
 
 .swiper {
+  width: 80%;
   max-width: 1266px;
   height: 500px;
   overflow: hidden;
@@ -410,11 +412,13 @@ img.burger-menu__logo {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 13%;
 }
 
 .site-title {
   cursor: pointer;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .menu-icon {
@@ -512,6 +516,31 @@ img.burger-menu__logo {
   }
   100% {
     transform: translate(-50%, -95%) rotate(0deg);
+  }
+}
+
+@media (max-width: 1192px) {
+  .menu-icon {
+    margin: 20px 60px;
+  }
+}
+@media (max-width: 666px) {
+  .site-title {
+    font-size: 18px;
+  }
+}
+@media (max-width: 666px) and (max-width: 550px) {
+  .site-title {
+    left: 10%;
+    transform: translateX(-10%);
+  }
+}
+@media (max-width: 666px) and (max-width: 500px) {
+  .site-title {
+    display: none;
+  }
+  .menu-icon {
+    margin: 0 auto;
   }
 }
 

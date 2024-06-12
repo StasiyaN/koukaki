@@ -15,11 +15,13 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 13%;
 }
 
 .site-title {
     cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .menu-icon {

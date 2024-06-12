@@ -1,0 +1,32 @@
+//navigation
+@media (max-width: 1192px) {
+    //navbar
+    .menu-icon {
+        margin:20px 60px;
+    }
+}
+
+@media (max-width: 666px) {
+    //navbar
+    .site-title {
+        font-size: 18px;
+    }
+
+    @media (max-width: 550px) {
+        .site-title {
+            left: 10%;
+            transform: translateX(-10%);
+        }
+    }
+
+    @media (max-width: 500px) {
+        .site-title {
+            display: none;
+        }
+        .menu-icon {
+            margin: 0 auto;
+        
+        }
+    }
+
+}
