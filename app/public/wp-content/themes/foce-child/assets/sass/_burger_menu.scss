@@ -37,7 +37,7 @@
 
 .burger-menu ul {
   position: relative;
-  top: 12vw; //170px;
+  top: 9vw; //170px;
   left: 31vw; //485px;
   display: flex;
   flex-direction: column;
@@ -95,7 +95,7 @@ img.sunflower-flower {
   @include burgerImgPos(216px, 40px, 1039px);
 }
 img.burger-menu__logo {
-  @include burgerImgPos(180px, 0px, 42vw);
+  @include burgerImgPos(11vw, 0vw, 42vw);
 }
 
 .burger-menu__flower {

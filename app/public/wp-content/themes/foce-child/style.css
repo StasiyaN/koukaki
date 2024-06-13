@@ -234,7 +234,7 @@ article {
 }
 
 .swiper {
-  width: 80%;
+  width: 95%;
   max-width: 1266px;
   height: 500px;
   overflow: hidden;
@@ -249,7 +249,7 @@ article {
 .swiper-slide img {
   display: block;
   width: 100%;
-  max-width: 900px;
+  max-width: 1266px;
 }
 
 .swiper-pagination {
@@ -292,7 +292,7 @@ article {
 
 .burger-menu ul {
   position: relative;
-  top: 12vw;
+  top: 9vw;
   left: 31vw;
   display: flex;
   flex-direction: column;
@@ -366,8 +366,8 @@ img.sunflower-flower {
 }
 
 img.burger-menu__logo {
-  width: 180px;
-  top: 0px;
+  width: 11vw;
+  top: 0vw;
   left: 42vw;
 }
 
@@ -390,6 +390,7 @@ img.burger-menu__logo {
   left: 793px;
   top: 248px;
   filter: blur(20px);
+  transition: translateX(0) left 10s ease-in-out;
 }
 
 .cloud__big {
@@ -397,6 +398,7 @@ img.burger-menu__logo {
   left: 1031px;
   top: 65px;
   filter: blur(20px);
+  transition: translateX(0) left 10s ease-in-out;
 }
 
 .lock {
@@ -561,6 +563,14 @@ img.burger-menu__logo {
   .site-title {
     font-size: 18px;
   }
+  img.burger-menu__logo {
+    width: 13vw;
+    top: 0vw;
+    left: 44vw;
+  }
+  .burger-menu__texte {
+    left: 29vw;
+  }
   #oscar {
     width: 450px;
     margin-bottom: 0;
@@ -572,18 +582,28 @@ img.burger-menu__logo {
     font-size: 25px;
   }
 }
-@media (max-width: 666px) and (max-width: 550px) {
+@media (max-width: 600px) {
+  .burger-menu__texte {
+    left: 28vw;
+  }
+}
+@media (max-width: 550px) {
   .site-title {
     left: 10%;
     transform: translateX(-10%);
   }
 }
-@media (max-width: 666px) and (max-width: 500px) {
+@media (max-width: 500px) {
   .site-title {
     display: none;
   }
   .menu-icon {
     margin: 0 auto;
+  }
+}
+@media (max-width: 320px) {
+  .background-video {
+    display: none;
   }
 }
 
