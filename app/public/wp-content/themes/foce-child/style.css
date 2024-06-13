@@ -1,28 +1,28 @@
 @keyframes fadeInUp {
-  from {
+  0% {
     opacity: 0;
-    transform: translateY(200px);
+    transform: translateY(100px);
   }
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
-@keyframes faceInUpReverse {
-  from {
+@keyframes fadeInUpReverse {
+  0% {
     opacity: 1;
-    transform: translateY(-200px);
+    transform: translateY(-100px);
   }
-  to {
+  100% {
     transform: translateY(0);
   }
 }
 @keyframes fadeInDown {
-  from {
+  0% {
     opacity: 0;
     transform: translateY(-100px);
   }
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
@@ -30,7 +30,7 @@
 @keyframes rotation {
   0% {
     transform: rotate(0deg);
-    transform-origin: center center; /* Set the transform origin to the center of the image */
+    transform-origin: center center; /* Set the transform origin 100% the center of the image */
   }
   100% {
     transform: rotate(360deg);
@@ -68,6 +68,24 @@
   }
   100% {
     transform: translate(-50%, -95%) rotate(0deg);
+  }
+}
+@keyframes logoFloat {
+  0%, 100% {
+    bottom: 60px;
+  }
+  50% {
+    bottom: 80px;
+  }
+}
+@keyframes logoUp {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 #page {
@@ -165,9 +183,12 @@ article {
   overflow: hidden;
   top: -80px;
 }
+
 .banner img {
+  position: absolute;
   margin-top: 15px;
   width: 45%;
+  animation: logoUp 2s ease-in;
 }
 
 .video-container {
@@ -185,12 +206,6 @@ article {
 
 .fallback-image {
   display: none;
-}
-
-.logo-img {
-  position: absolute;
-  top: 20%;
-  animation: fadeInUp 1000ms ease-in-out 1;
 }
 
 .site-footer::before, .site-footer::after {
@@ -271,6 +286,7 @@ article {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  animation: fadeInDown 1000ms ease-in-out;
 }
 
 .burger-menu__body {

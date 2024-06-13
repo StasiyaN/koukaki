@@ -4,11 +4,14 @@
     background-image: none;
     overflow: hidden;
     top: -80px;
-    img {
-      margin-top: 15px;
-      width: 45%;
-    }
+}
+  .banner img {
+    position: absolute;
+    margin-top: 15px;
+    width: 45%;
+    animation:logoUp 2s ease-in;
   }
+
   
   .video-container {
     position: relative;
@@ -25,10 +28,6 @@
   .fallback-image {
     display: none;
   }
-  .logo-img {
-    position: absolute;
-    top: 20%;
-    animation: $animationUp;
-    
-  }
 
+
+//logoFloat 5s ease-in-out infinite alternate;

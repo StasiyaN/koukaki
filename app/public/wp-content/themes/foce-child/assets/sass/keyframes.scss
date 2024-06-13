@@ -1,31 +1,31 @@
 @keyframes fadeInUp {
-  from {
+  0% {
     opacity: 0;
-    transform: translateY(200px); 
+    transform: translateY(100px); 
   }
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0); 
 }
 }
 
-@keyframes faceInUpReverse {
-  from {
+@keyframes fadeInUpReverse {
+  0% {
     opacity: 1;
-    transform: translateY(-200px);
+    transform: translateY(-100px);
   }
-  to {
+  100% {
     transform: translateY(0);
   }
 }
 
 
 @keyframes fadeInDown {
-  from {
+  0% {
     opacity: 0;
     transform: translateY(-100px);
   }
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
@@ -35,7 +35,7 @@
 @keyframes rotation {
   0% {     
     transform: rotate(0deg);
-    transform-origin: center center; /* Set the transform origin to the center of the image */
+    transform-origin: center center; /* Set the transform origin 100% the center of the image */
   }
   
   100% {
@@ -88,39 +88,24 @@
 }
 
 
-// @keyframes float {
-   
-//     0% {
-//       transform: translate(0, 0);
-//     }
-//     10% {
-//       transform: translate(6px, -5px);
-//     }
-//     20% {
-//       transform: translate(15px, 3px);
-//     }
-//     30% {
-//       transform: translate(5px, -2px);
-//     }
-//     40% {
-//       transform: translate(9px, 1px);
-//     }
-//     50% {
-//       transform: translate(5px, -10px);
-//     }
-//     60% {
-//       transform: translate(3px, -8px);
-//     }
-//     70% {
-//       transform: translate(0px, -4px);
-//     }
-//     80% {
-//       transform: translate(5px, 0px);
-//     }
-//     90% {
-//       transform: translate(2px, -5px);
-//     }
-//     100% {
-//       transform: translate(0, 0);
-//     }
-// }
+
+@keyframes logoFloat {
+  0%, 100% {
+    bottom: 60px;
+}
+50% {
+    bottom: 80px;
+}
+}
+
+@keyframes logoUp {
+  0% {
+    opacity: 0;
+    transform: translateY(200px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); 
+
+}
+}
