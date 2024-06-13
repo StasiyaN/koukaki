@@ -262,7 +262,7 @@ article {
 
 .burger-menu {
   position: fixed;
-  width: 1440px;
+  width: 100%;
   height: 100vh;
   background-color: #FFF5E9;
   top: 80px;
@@ -271,7 +271,6 @@ article {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  animation: fadeInDown 1000ms ease-in-out;
 }
 
 .burger-menu__body {
@@ -286,21 +285,23 @@ article {
   display: flex;
   position: absolute;
   z-index: 1;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .burger-menu ul {
   position: relative;
-  top: 170px;
-  left: 485px;
+  top: 12vw;
+  left: 31vw;
   display: flex;
   flex-direction: column;
-  width: 100%;
   list-style: none;
   background: #FFF5E9;
 }
 
 .burger-menu__text li a {
-  font-size: 54px;
+  font-size: 4vw;
   font-weight: 400;
   text-decoration: none;
   color: #000;
@@ -367,7 +368,7 @@ img.sunflower-flower {
 img.burger-menu__logo {
   width: 180px;
   top: 0px;
-  left: 610px;
+  left: 42vw;
 }
 
 .burger-menu__flower {
