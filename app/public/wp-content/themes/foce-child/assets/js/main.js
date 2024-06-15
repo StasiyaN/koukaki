@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
         videoContainer.style.transform = `translateY(${movementRatio * 80}px)`; // Apply parallax effect with a multiplier
-        logo.style.transform = `translateY(${movementRatio * 200}px)`; // Apply parallax effect with a multiplier
+        logo.style.transform = `translateY(${movementRatio * 180}px)`; // Apply parallax effect with a multiplier
     }
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('scroll', function() {
