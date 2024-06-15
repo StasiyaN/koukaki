@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const newScrollY = window.scrollY; // Update scroll position
         const movementRatio = newScrollY / window.innerHeight; // Calculate movement ratio
 
+
         videoContainer.style.transform = `translateY(${movementRatio * 80}px)`; // Apply parallax effect with a multiplier
         logo.style.transform = `translateY(${movementRatio * 180}px)`; // Apply parallax effect with a multiplier
     }

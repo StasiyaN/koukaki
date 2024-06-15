@@ -74,11 +74,11 @@
 @keyframes logoUp {
   0% {
     opacity: 0;
-    transform: translateY(200px);
+    top: 1000px;
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    top: 370px;
   }
 }
 @keyframes floatLogo {
@@ -192,12 +192,13 @@ article {
   position: absolute;
   width: 90%;
   z-index: 1;
+  animation: logoUp 1.5s ease-in-out forwards;
 }
 
 .logo-img {
   position: absolute;
   animation: floatLogo 2s linear infinite alternate;
-  top: 320px;
+  top: 370px;
   left: 650px;
 }
 
@@ -211,7 +212,7 @@ article {
 
 .background-video {
   z-index: -1;
-  animation: fadeInDown 1s ease-in-out;
+  animation: fadeInDown 1.5s ease-in-out;
 }
 
 .fallback-image {
@@ -297,7 +298,7 @@ article {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  animation: fadeInDown 1s ease-in-out;
+  animation: fadeInDown 1.5s ease-in-out;
 }
 
 .burger-menu__body {

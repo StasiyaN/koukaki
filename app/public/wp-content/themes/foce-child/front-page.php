@@ -12,7 +12,7 @@ get_header();
                 </video>
                 <img src="<?php echo get_template_directory_uri() . '/assets/images/banner.png'; ?>" class="fallback-image" alt="Image de remplacement">
             </div>
-                <div class="logo-wrap">
+                <div class="logo-wrap" id="logo-wrap">
                     <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?>" class="logo-img" alt="logo Fleurs d'oranger & chats errants">
                 </div> 
             </div>

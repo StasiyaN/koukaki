@@ -8,22 +8,17 @@
 
 .logo-wrap {
   position: absolute;
-  //top: 350px;
-  //left: 300px;
   width: 90%;
-
   z-index: 1;
+  animation: logoUp 1.5s ease-in-out forwards;
   
 }
 .logo-img {
   position: absolute;
   animation: floatLogo 2s linear infinite alternate;
-  top: 320px;
+  top: 370px;
   left: 650px;
-
 }
-
-
 
 .video-container {
   position: relative;
@@ -36,10 +31,8 @@
   z-index: -1;
   animation: $animationDown;
 }
-
 .fallback-image {
   display: none;
 }
 
 
-//logoFloat 5s ease-in-out infinite alternate;
