@@ -83,29 +83,13 @@
 }
 @keyframes floatLogo {
   0% {
-    top: 0%;
-    left: -0.3%;
-    rotate: -1deg;
-  }
-  25% {
-    top: -0.5%;
-    left: -0.15%;
-    rotate: -0.5deg;
+    transform: translate(-50%, -100%) rotate(-0.2deg);
   }
   50% {
-    top: -1%;
-    left: 0%;
-    rotate: 0deg;
-  }
-  75% {
-    top: -2%;
-    left: -0.25%;
-    rotate: 0.5deg;
+    transform: translate(-49%, -97%) rotate(0.1deg);
   }
   100% {
-    top: -3%;
-    left: -0.5%;
-    rotate: 1deg;
+    transform: translate(-50%, -98%) rotate(-0.2deg);
   }
 }
 #page {
@@ -204,12 +188,17 @@ article {
   top: -80px;
 }
 
-.banner img {
+.logo-wrap {
   position: absolute;
-  margin-top: 180px;
-  margin-left: 400px;
-  width: 45%;
+  width: 90%;
+  z-index: 1;
+}
+
+.logo-img {
+  position: absolute;
   animation: floatLogo 2s linear infinite alternate;
+  top: 320px;
+  left: 650px;
 }
 
 .video-container {
@@ -246,16 +235,17 @@ article {
 
 .animated-header {
   display: inline-flex;
-  animation: glideUp 200ms ease-in-out;
+  animation-delay: 2s;
+  animation: glideUp 1s ease-in-out;
 }
 .animated-header:nth-child(2) {
-  animation-delay: 200ms;
+  animation-delay: 1200ms;
 }
 .animated-header:nth-child(3) {
-  animation-delay: 400ms;
+  animation-delay: 1400ms;
 }
 .animated-header:nth-child(4) {
-  animation-delay: 600ms;
+  animation-delay: 1600ms;
 }
 
 .story #characters div {

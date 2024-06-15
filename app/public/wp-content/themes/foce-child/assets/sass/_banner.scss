@@ -5,13 +5,24 @@
   overflow: hidden;
   top: -80px;
 }
-.banner img {
+
+.logo-wrap {
   position: absolute;
-  margin-top: 180px;
-  margin-left: 400px;
-  width: 45%;
-  animation: floatLogo 2s linear infinite alternate;
+  //top: 350px;
+  //left: 300px;
+  width: 90%;
+
+  z-index: 1;
+  
 }
+.logo-img {
+  position: absolute;
+  animation: floatLogo 2s linear infinite alternate;
+  top: 320px;
+  left: 650px;
+
+}
+
 
 
 .video-container {

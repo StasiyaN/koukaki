@@ -4,10 +4,10 @@ document.addEventListener('DOMContentLoaded', function() {
     //declation de variables banner
     const banner = document.getElementById('banner');
     const videoContainer = banner.querySelector('.banner-video');
-    const logo = banner.querySelector('.logo-img');
+    const logo = banner.querySelector('.logo-wrap');
     //let scrollY = window.scrollY; // Initial scroll position
     let lastScrollY = window.scrollY; 
-    
+    console.log(logo);
     //declarations de variables nuages
     const cloudLittle = document.querySelector('.cloud__little');
     const cloudBig = document.querySelector('.cloud__big');    
