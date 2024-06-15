@@ -198,8 +198,8 @@ article {
 .logo-img {
   position: absolute;
   animation: floatLogo 2s linear infinite alternate;
-  top: 370px;
-  left: 650px;
+  top: 25vw;
+  left: 45vw;
 }
 
 .video-container {

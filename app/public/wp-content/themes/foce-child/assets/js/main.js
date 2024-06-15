@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
         videoContainer.style.transform = `translateY(${movementRatio * 80}px)`; // Apply parallax effect with a multiplier
-        logo.style.transform = `translateY(${movementRatio * 180}px)`; // Apply parallax effect with a multiplier
+        logo.style.transform = `translateY(${movementRatio * 200}px)`; // Apply parallax effect with a multiplier
     }
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('scroll', function() {
@@ -65,7 +65,6 @@ document.addEventListener('DOMContentLoaded', function() {
             // Le -translationX (distance de déplacement vers la gauche), 'px' pour utiliser le pixel.
             cloudBig.style.transform = 'translateX(' + (-movementX) + 'px)';
             cloudLittle.style.transform = 'translateX(' + (-movementX) + 'px)';
-            lastScrollY = newScrollY
         }
     });
     
