@@ -47,6 +47,24 @@
     }
 }
 
+@media (max-width: 768px) {
+    .cloud__big {
+        left: 700px;
+    }
+
+    .cloud__little {
+        left: 500px;
+    }
+
+    #studio h2::before {
+        visibility: hidden;
+    }
+
+    .oscar__title {
+        margin-left: 25px;
+    }
+}
+
 
 @media (max-width: 666px) {
     //navbar
