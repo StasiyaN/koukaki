@@ -1,7 +1,7 @@
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(100px); 
+    transform: translateY(200px); 
   }
   100% {
     opacity: 1;
@@ -12,13 +12,13 @@
 @keyframes fadeInUpReverse {
   0% {
     opacity: 1;
-    transform: translateY(-100px);
+    transform: translateY(-200px); 
   }
   100% {
-    transform: translateY(0);
-  }
+    opacity: 1;
+    transform: translateY(0); 
 }
-
+}
 
 @keyframes fadeInDown {
   0% {
@@ -31,7 +31,6 @@
   }
 }
 
-
 @keyframes rotation {
   0% {     
     transform: rotate(0deg);
@@ -43,8 +42,6 @@
     transform-origin: center center; /* Maintain the same transform origin for the end of the animation */
   }
 }
-
-
 
 @keyframes clouds {
   0% {
@@ -72,7 +69,6 @@
   }
 }
 
-
 @keyframes float {
 0% {
   transform: translate(-50%, -100%) rotate(0deg);
@@ -87,17 +83,6 @@
 }
 }
 
-
-
-@keyframes logoFloat {
-  0%, 100% {
-    bottom: 60px;
-}
-50% {
-    bottom: 80px;
-}
-}
-
 @keyframes logoUp {
   0% {
     opacity: 0;
@@ -106,6 +91,38 @@
   100% {
     opacity: 1;
     transform: translateY(0); 
+}
+}
 
+@keyframes floatLogo {
+  0% {
+    top: 0%;
+    left: -0.3%;
+    rotate: -1deg;
+  }
+  
+  25% {
+    top: -0.5%;
+    left: -0.15%;
+    rotate: -0.5deg;
+  }
+
+  50% {
+    top: -1%;
+    left: 0%;
+    rotate: 0deg;
+  }
+  
+  75% {
+    top: -2%;
+    left: -0.25%;
+    rotate: 0.5deg;
+  }
+
+  100% {
+    top: -3%;
+    left: -0.5%;
+    rotate: 1deg;
+  }
 }
-}
+

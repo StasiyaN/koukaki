@@ -1,7 +1,7 @@
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(200px);
   }
   100% {
     opacity: 1;
@@ -11,9 +11,10 @@
 @keyframes fadeInUpReverse {
   0% {
     opacity: 1;
-    transform: translateY(-100px);
+    transform: translateY(-200px);
   }
   100% {
+    opacity: 1;
     transform: translateY(0);
   }
 }
@@ -70,14 +71,6 @@
     transform: translate(-50%, -95%) rotate(0deg);
   }
 }
-@keyframes logoFloat {
-  0%, 100% {
-    bottom: 60px;
-  }
-  50% {
-    bottom: 80px;
-  }
-}
 @keyframes logoUp {
   0% {
     opacity: 0;
@@ -86,6 +79,33 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@keyframes floatLogo {
+  0% {
+    top: 0%;
+    left: -0.3%;
+    rotate: -1deg;
+  }
+  25% {
+    top: -0.5%;
+    left: -0.15%;
+    rotate: -0.5deg;
+  }
+  50% {
+    top: -1%;
+    left: 0%;
+    rotate: 0deg;
+  }
+  75% {
+    top: -2%;
+    left: -0.25%;
+    rotate: 0.5deg;
+  }
+  100% {
+    top: -3%;
+    left: -0.5%;
+    rotate: 1deg;
   }
 }
 #page {
@@ -104,29 +124,29 @@ article {
 }
 
 .story {
-  animation: fadeInUp 1000ms ease-in-out 1;
+  animation: fadeInUp 1s ease-in-out 1;
 }
 .story p {
-  animation: fadeInUpRevers 1000ms ease-in-out 1;
+  animation: fadeInUpRevers 2s ease-in-out 1;
 }
 
 #place {
-  animation: fadeInUp 1000ms ease-in-out 1;
+  animation: fadeInUp 1s ease-in-out 1;
 }
 #place p {
-  animation: fadeInUpRevers 1000ms ease-in-out 1;
+  animation: fadeInUpRevers 2s ease-in-out 1;
 }
 
 #studio {
-  animation: fadeInUp 1000ms ease-in-out 1;
+  animation: fadeInUp 1s ease-in-out 1;
 }
 #studio p {
-  animation: fadeInUpRevers 1000ms ease-in-out 1;
+  animation: fadeInUpRevers 2s ease-in-out 1;
 }
 
 #characters {
   padding-top: 40px;
-  animation: fadeInUp 1000ms ease-in-out 1;
+  animation: fadeInUp 1s ease-in-out 1;
 }
 #characters h3 {
   margin-bottom: 0px;
@@ -140,7 +160,7 @@ article {
   justify-content: center;
   margin-top: 250px;
   margin-bottom: 125.28px;
-  animation: fadeInUp 1000ms ease-in-out 1;
+  animation: fadeInUp 1s ease-in-out 1;
 }
 
 .oscar__article {
@@ -186,9 +206,10 @@ article {
 
 .banner img {
   position: absolute;
-  margin-top: 15px;
+  margin-top: 180px;
+  margin-left: 400px;
   width: 45%;
-  animation: logoUp 2s ease-in;
+  animation: floatLogo 2s linear infinite alternate;
 }
 
 .video-container {
@@ -201,7 +222,7 @@ article {
 
 .background-video {
   z-index: -1;
-  animation: fadeInDown 1000ms ease-in-out;
+  animation: fadeInDown 1s ease-in-out;
 }
 
 .fallback-image {
@@ -220,7 +241,7 @@ article {
 .oscar__title::before,
 .site-footer ul::after {
   line-height: 0;
-  animation: rotation 10000ms linear infinite;
+  animation: rotation 10s linear infinite;
 }
 
 .animated-header {
@@ -286,7 +307,7 @@ article {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  animation: fadeInDown 1000ms ease-in-out;
+  animation: fadeInDown 1s ease-in-out;
 }
 
 .burger-menu__body {
@@ -389,7 +410,7 @@ img.burger-menu__logo {
 
 .burger-menu__flower {
   line-height: 0;
-  animation: rotation 10000ms linear infinite;
+  animation: rotation 10s linear infinite;
 }
 
 .burger-menu p {
