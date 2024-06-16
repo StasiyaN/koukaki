@@ -144,29 +144,27 @@
 }
 
 .oscar__article {
-  display: block;
+  box-sizing: content-box;
+  width: 825px;
   height: 200.02px;
-  width: 58vw;
 }
 
 .oscar__title {
   font-family: "Quicksand";
-  font-size: 2.6rem;
+  font-weight: 700;
+  font-size: 42px;
   line-height: 1.2;
   background-image: url("../foce-child/assets/images/oscars-bg-image.png");
-  background-size: contain;
-  background-position: left;
-  padding: 1.8em 2em;
-  text-align: left;
-  margin-left: 7vw;
-  position: relative;
+  background-size: 800px 260px;
+  letter-spacing: -2%;
+  width: 675px;
 }
 .oscar__title::before {
   content: url("../foce/assets/images/Sunflower.png");
   width: 216px;
   height: auto;
   position: absolute;
-  top: -200px;
+  top: -95px;
   left: 95px;
 }
 
@@ -625,14 +623,8 @@ img.burger-menu__logo {
   .burger-menu__texte {
     left: 29vw;
   }
-  #oscar {
-    width: 450px;
-    margin-bottom: 0;
-    align-items: center;
-    justify-content: center;
-  }
-  .oscar__title {
-    font-size: 1rem;
+  #oscar__article {
+    width: 80vw;
   }
 }
 @media (max-width: 600px) {
@@ -666,6 +658,19 @@ img.burger-menu__logo {
   }
   #studio h2 {
     font-size: 2.5rem;
+  }
+  #oscar {
+    align-items: flex-start;
+  }
+  .oscar__article {
+    width: 90vw;
+  }
+  .oscar__title {
+    font-size: 1.1rem;
+  }
+  img.oscar__img {
+    margin-left: 18vw;
+    width: 30%;
   }
 }
 @media (max-width: 320px) {

@@ -100,15 +100,9 @@
         left: 29vw;
     }
     
-    #oscar {
-        width: 450px;
-        margin-bottom: 0;
-        align-items: center;
-        justify-content: center;
+    #oscar__article {
+        width: 80vw;
     }
-        .oscar__title {
-            font-size: 1rem;
-         }
     }
 
 
@@ -150,6 +144,24 @@
     
     #studio h2 {
         font-size: 2.5rem;
+    }
+
+    #oscar {
+        align-items: flex-start;
+    }
+
+    .oscar__article {
+        width: 90vw;
+    }
+    .oscar__title {
+        font-size: 1.1rem;
+    }
+    // .oscar__title::before {
+        
+    // }
+    img.oscar__img {
+        margin-left: 18vw;
+        width: 30%;
     }
 }
 
