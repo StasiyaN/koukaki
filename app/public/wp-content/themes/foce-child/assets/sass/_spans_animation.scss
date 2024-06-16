@@ -1,20 +1,11 @@
 .animated-header {
-    display: inline-flex;
-    animation: glideUp 0.2s ease-in-out;
-
-    &:nth-child(1) {
-      animation-delay:0.2s;
-    }
-   
-    &:nth-child(2) {
-      animation-delay: 0.4s;
-    }
-    
-    &:nth-child(3) {
-      animation-delay: 0.6s;
-    }
-    &:nth-child(4) {
-      animation-delay: 0.8s;
-    }
-  }
+  display: inline-flex;
+  animation: glideUp 0.2s ease-in-out;
   
+  &:nth-child(1) {
+    animation-delay:0.2s;
+  }
+  &:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+}

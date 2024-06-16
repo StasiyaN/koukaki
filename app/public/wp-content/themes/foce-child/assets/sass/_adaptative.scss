@@ -54,7 +54,6 @@
     #oscar {
         width: 600px;
         margin-bottom: 0;
-        left: 5%;
         align-items: center;
         justify-content: center;
     }
@@ -71,6 +70,10 @@
     
     #studio h2::before {
         visibility: hidden;
+    }
+
+    #oscar {
+        left: 9vw;
     }
     
     .oscar__title {
@@ -100,7 +103,6 @@
     #oscar {
         width: 450px;
         margin-bottom: 0;
-        left: 13%;
         align-items: center;
         justify-content: center;
     }

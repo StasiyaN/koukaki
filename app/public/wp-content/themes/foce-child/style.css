@@ -242,12 +242,6 @@
 .animated-header:nth-child(2) {
   animation-delay: 0.4s;
 }
-.animated-header:nth-child(3) {
-  animation-delay: 0.6s;
-}
-.animated-header:nth-child(4) {
-  animation-delay: 0.8s;
-}
 
 .story #characters div {
   flex: none;
@@ -595,7 +589,6 @@ img.burger-menu__logo {
   #oscar {
     width: 600px;
     margin-bottom: 0;
-    left: 5%;
     align-items: center;
     justify-content: center;
   }
@@ -609,6 +602,9 @@ img.burger-menu__logo {
   }
   #studio h2::before {
     visibility: hidden;
+  }
+  #oscar {
+    left: 9vw;
   }
   .oscar__title {
     font-size: 1.5rem;
@@ -632,7 +628,6 @@ img.burger-menu__logo {
   #oscar {
     width: 450px;
     margin-bottom: 0;
-    left: 13%;
     align-items: center;
     justify-content: center;
   }
