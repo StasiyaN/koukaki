@@ -97,10 +97,6 @@
   margin: 0 auto;
 }
 
-article {
-  padding-top: 30px;
-}
-
 .main-navigation a {
   display: block;
   white-space: nowrap;
@@ -148,20 +144,22 @@ article {
 }
 
 .oscar__article {
-  box-sizing: content-box;
-  width: 825px;
+  display: block;
   height: 200.02px;
+  width: 58vw;
 }
 
 .oscar__title {
   font-family: "Quicksand";
-  font-weight: 700;
-  font-size: 42px;
+  font-size: 2.6rem;
   line-height: 1.2;
   background-image: url("../foce-child/assets/images/oscars-bg-image.png");
-  background-size: 800px 260px;
-  letter-spacing: -2%;
-  width: 675px;
+  background-size: contain;
+  background-position: left;
+  padding: 1.8em 2em;
+  text-align: left;
+  margin-left: 7vw;
+  position: relative;
 }
 .oscar__title::before {
   content: url("../foce/assets/images/Sunflower.png");
@@ -571,16 +569,26 @@ img.burger-menu__logo {
     align-items: center;
     justify-content: center;
   }
+  .oscar__article {
+    width: 70vw;
+    height: auto;
+  }
   img.oscar__img {
     margin-top: 4vw;
   }
   .cloud__big {
     left: 900px;
   }
+  .oscar__title {
+    font-size: 2em;
+  }
 }
 @media (max-width: 900px) {
   .swiper-slider img {
     overflow: none;
+  }
+  .oscar__title {
+    font-size: 1.7rem;
   }
 }
 @media (max-width: 781px) {
@@ -603,7 +611,10 @@ img.burger-menu__logo {
     visibility: hidden;
   }
   .oscar__title {
-    margin-left: 25px;
+    font-size: 1.5rem;
+  }
+  .story #characters h3 {
+    margin-left: 0;
   }
 }
 @media (max-width: 666px) {
@@ -621,12 +632,12 @@ img.burger-menu__logo {
   #oscar {
     width: 450px;
     margin-bottom: 0;
-    left: 5%;
+    left: 13%;
     align-items: center;
     justify-content: center;
   }
   .oscar__title {
-    font-size: 25px;
+    font-size: 1rem;
   }
 }
 @media (max-width: 600px) {
@@ -646,6 +657,20 @@ img.burger-menu__logo {
   }
   .menu-icon {
     margin: 0 auto;
+  }
+}
+@media (max-width: 425px) {
+  .menu-icon {
+    margin: 15px auto;
+  }
+  .story #characters {
+    margin-top: 5px;
+  }
+  .clouds {
+    visibility: hidden;
+  }
+  #studio h2 {
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 320px) {
