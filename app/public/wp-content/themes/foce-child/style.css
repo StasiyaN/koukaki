@@ -272,7 +272,7 @@
   padding-top: 0;
 }
 
-.open {
+.active {
   display: flex !important;
 }
 
@@ -551,6 +551,7 @@ img.burger-menu__logo {
     background-position: center;
     text-align: center;
     padding-left: 5%;
+    margin: 0 auto;
   }
   #oscar {
     flex-direction: column;
@@ -679,9 +680,6 @@ img.burger-menu__logo {
   }
 }
 @media (max-width: 320px) {
-  .background-video {
-    display: none;
-  }
   #studio h2 {
     font-size: 1.5rem;
   }

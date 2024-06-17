@@ -76,16 +76,14 @@ document.addEventListener('DOMContentLoaded', function() {
     
     //burger menu
     menuIcon.addEventListener('click', function () {
-        menuIcon.classList.toggle('active');
-        burgerMenuContent.classList.toggle('open');
+        menuIcon.classList.toggle && burgerMenuContent.classList.toggle('active') ;
         document.body.classList.toggle('lock');
         
     });
     //liens
     links.forEach(link => {
         link.addEventListener('click', () => {
-            menuIcon.classList.remove('active');
-            burgerMenuContent.classList.remove('open');
+            menuIcon.classList.remove && burgerMenuContent.classList.remove('active');
             document.body.classList.remove('lock');
         });
         

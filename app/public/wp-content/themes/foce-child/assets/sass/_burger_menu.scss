@@ -1,4 +1,4 @@
-.open {
+.active {
   display: flex !important;
 }
 
@@ -67,8 +67,9 @@
   max-width: none;
   position: absolute;
   z-index: 1;
-
 }
+
+//positionnement des images menu content
 img.black {
   @include burgerImgPos (150px, 400px, 1030px);
 }

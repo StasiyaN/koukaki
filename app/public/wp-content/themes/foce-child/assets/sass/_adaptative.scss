@@ -2,17 +2,15 @@
 @media (max-width: 1192px) {
     //navbar
     .menu-icon {
-        margin:20px 60px;
+        margin: 20px 60px;
     }
-    
-    //burger menu
-    
 }
 @media (max-width: 1024px) {
     .story #characters h3 {
         background-position: center;
         text-align: center;
         padding-left: 5%;
+        margin: 0 auto;
     }
     
     #oscar {
@@ -21,8 +19,7 @@
         align-items: center;
         justify-content: center;
     }
-
-  
+    
     img.oscar__img {
         margin-top: 4vw;
     }
@@ -30,7 +27,7 @@
     .cloud__big {
         left: 900px;
     }
-
+    
     .oscar__title  {
         font-size: 2em;
     }
@@ -40,12 +37,11 @@
     .swiper-slider img {
         overflow: none;
     }
-
+    
     .oscar__title {
         font-size: 1.7rem;
     }
 }
-
 
 @media (max-width: 781px) {
     #oscar {
@@ -67,20 +63,15 @@
     #studio h2::before {
         visibility: hidden;
     }
-
-    // #oscar {
-    //     left: 9vw;
-    // }
     
     .oscar__title {
-       font-size: 1.5rem;
+        font-size: 1.5rem;
     }
     
     .story #characters h3 {
         margin-left: 0;
     }
 }
-
 
 @media (max-width: 666px) {
     //navbar
@@ -99,8 +90,7 @@
     #oscar__article {
         width: 80vw;
     }
-    }
-
+}
 
 @media (max-width: 600px) {
     .burger-menu__texte {
@@ -130,10 +120,11 @@
         margin: 15px auto;
     }
 
+    
     .story #characters{
         margin-top: 5px;
     }
-
+    
     .clouds {
         visibility: hidden;
     }
@@ -141,20 +132,19 @@
     #studio h2 {
         font-size: 2.5rem;
     }
-
+    
     #oscar {
         align-items: flex-start;
         margin: 3.5vw auto;
     }
-
+    
     .oscar__article {
         margin-left: 12vw;
     }
     .oscar__title {
         font-size: 1.1rem;
-
     }
-   
+    
     img.oscar__img {
         margin-left: 18vw;
         width: 60%;
@@ -162,17 +152,17 @@
     .swiper {
         width: 75%;
     }
-
+    
     .site-footer {
         padding-top: 12em;
-       }
-
+    }
+    
     .site-footer ul {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        }
+    }
     li {
         padding-top: 1em;
     }
@@ -180,24 +170,20 @@
 
 
 @media (max-width: 320px) {
-    .background-video {
-        display: none;
-    }
-
+  
+    
     #studio h2 {
         font-size: 1.5rem;
     }
-
+    
     .story #characters h3,
     .story #place h3 {
         font-size: 2rem;
     }
-
-   .oscar__title {
+    .oscar__title {
         font-size: 0.9rem;
     }
     .swiper {
         width: 70%;
     }
-
 }
