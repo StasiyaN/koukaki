@@ -289,7 +289,7 @@
 .burger-menu {
   position: fixed;
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: #FFF5E9;
   top: 80px;
   margin: 0 auto;
@@ -577,6 +577,15 @@ img.burger-menu__logo {
   }
   .oscar__title {
     font-size: 2em;
+  }
+  img.black {
+    left: 800px;
+  }
+  img.hibiscus-flower {
+    display: none;
+  }
+  img.sunflower-flower {
+    left: 900px;
   }
 }
 @media (max-width: 900px) {
