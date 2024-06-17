@@ -1,4 +1,3 @@
-
 //section Oscar
 #oscar {
   position: relative;
@@ -9,38 +8,43 @@
   margin-top: 250px;
   margin-bottom: 125.28px;
   animation: $animationUp;
-  
 }
 
 .oscar__article {
-  box-sizing: content-box;
-  width: 825px; // contre le maquette
-  height: 200.02px;
-  
+  display: block;
+  width: auto; 
+  height: auto;
+  margin-left: 0.7vw;
+  margin-right: 1.4vw;
 }
-
 
 .oscar__title {
-  font-family: "Quicksand";
-  font-weight: 700;
-  font-size: 42px;      
-  line-height: 1.2;
-  background-image: url("../foce-child/assets/images/oscars-bg-image.png");
-  background-size: 800px 260px; //contre le maquette
-  letter-spacing: -2%;
-  width: 675px;
-  //margin-top: 30px;
+    display: block;
+    position: relative;
+    font-family: "Quicksand";
+    font-weight: 700;
+    font-size: 2.6em;      
+    line-height: 1.2;
+    background-image: url("../foce-child/assets/images/oscars-bg-image.png");
+    background-size: contain;
+    background-position: left;
+    text-align: left;
+    padding: 1.8em 2em;
+
   
-  &::before {
-    content: url("../foce/assets/images/Sunflower.png");
-    width: 216px;
-    height: auto;
-    position: absolute;
-    top: -95px;
-    left: 95px;
-    
-  }
+  // &::before {
+  //   content: url("../foce/assets/images/Sunflower.png");
+  //   display: inline-block;
+  //   width: 216px;
+  //   height: auto;
+  //   position: absolute;
+  //   top: -95px;
+  //   left: 95px;
+  // }
+  
 }
+
+
 
 #studio {
   div::after{
