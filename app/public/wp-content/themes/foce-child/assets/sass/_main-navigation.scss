@@ -30,7 +30,7 @@
     z-index: 50;
     align-items: center;
     justify-content: center;
-    flex-direction: column;  /* Ensure the spans are stacked vertically */
+    flex-direction: column; 
     width: 40px;
     height: 20px;
     cursor: pointer;
@@ -38,12 +38,11 @@
 }
 
 .menu-icon span {
-    background-color: black;  /* Add background color to make the spans visible */
-    height: 1px;              /* Increase height for better visibility */
+    background-color: black;  
+    height: 1px;              
     width: 100%;
-    margin: 3px;            /* Add margin for spacing between spans */
+    margin: 3px;           
     transform: scale(1);
-   // transition: all 0.3s;     /* Add transition for any future animations */
 }
 
 .menu-icon::before,

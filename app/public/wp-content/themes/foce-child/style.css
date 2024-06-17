@@ -143,8 +143,18 @@
   animation: fadeInUp 1s ease-in-out 1;
 }
 
+.oscar__flower {
+  position: absolute;
+  z-index: 3;
+  top: -6.9vw;
+  right: 76.3vw;
+  line-height: 0;
+  animation: rotation 10s linear infinite;
+}
+
 .oscar__article {
   display: block;
+  position: relative;
   width: auto;
   height: auto;
   margin-left: 0.7vw;
@@ -449,7 +459,7 @@ img.burger-menu__logo {
   z-index: 50;
   align-items: center;
   justify-content: center;
-  flex-direction: column; /* Ensure the spans are stacked vertically */
+  flex-direction: column;
   width: 40px;
   height: 20px;
   cursor: pointer;
@@ -457,10 +467,10 @@ img.burger-menu__logo {
 }
 
 .menu-icon span {
-  background-color: black; /* Add background color to make the spans visible */
-  height: 1px; /* Increase height for better visibility */
+  background-color: black;
+  height: 1px;
   width: 100%;
-  margin: 3px; /* Add margin for spacing between spans */
+  margin: 3px;
   transform: scale(1);
 }
 

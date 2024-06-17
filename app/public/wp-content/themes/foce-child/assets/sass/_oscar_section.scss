@@ -1,4 +1,5 @@
 //section Oscar
+
 #oscar {
   position: relative;
   display: flex;
@@ -9,9 +10,17 @@
   margin-bottom: 125.28px;
   animation: $animationUp;
 }
-
+.oscar__flower {
+position: absolute;
+z-index: 3;
+top: -6.9vw; //-100px;
+right: 76.3vw; //1100px;
+line-height: 0;
+animation: $rotationFlower;
+}
 .oscar__article {
   display: block;
+  position: relative;
   width: auto; 
   height: auto;
   margin-left: 0.7vw;
