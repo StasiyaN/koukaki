@@ -52,6 +52,9 @@
 }
 
 @media (max-width: 768px) {
+    .banner img {
+        width: 70%;;
+    }
     .cloud__big {
         left: 700px;
     }
@@ -68,13 +71,16 @@
         font-size: 1.5rem;
     }
     
+    .oscar__flower {
+        top: -25vw;
+        right: 66vw ;
+    }
     .story #characters h3 {
         margin-left: 0;
     }
 }
 
 @media (max-width: 666px) {
-    //navbar
     .site-title {
         font-size: 18px;
     }
@@ -116,10 +122,12 @@
 }
 
 @media (max-width: 425px) {
+    .banner img {
+        width: 100%;
+    }
     .menu-icon {
         margin: 15px auto;
     }
-
     
     .story #characters{
         margin-top: 5px;
@@ -143,6 +151,9 @@
     }
     .oscar__title {
         font-size: 1.1rem;
+    }
+    .oscar__flower {
+        z-index: -1;
     }
     
     img.oscar__img {
@@ -168,9 +179,14 @@
     }
 }
 
+@media (max-width: 375px) {
+    #studio h2 {
+        font-size: 2rem;
+    }
+}
 
 @media (max-width: 320px) {
-  
+    
     
     #studio h2 {
         font-size: 1.5rem;

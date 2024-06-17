@@ -595,6 +595,9 @@ img.burger-menu__logo {
   }
 }
 @media (max-width: 768px) {
+  .banner img {
+    width: 70%;
+  }
   .cloud__big {
     left: 700px;
   }
@@ -606,6 +609,10 @@ img.burger-menu__logo {
   }
   .oscar__title {
     font-size: 1.5rem;
+  }
+  .oscar__flower {
+    top: -25vw;
+    right: 66vw;
   }
   .story #characters h3 {
     margin-left: 0;
@@ -647,6 +654,9 @@ img.burger-menu__logo {
   }
 }
 @media (max-width: 425px) {
+  .banner img {
+    width: 100%;
+  }
   .menu-icon {
     margin: 15px auto;
   }
@@ -669,6 +679,9 @@ img.burger-menu__logo {
   .oscar__title {
     font-size: 1.1rem;
   }
+  .oscar__flower {
+    z-index: -1;
+  }
   img.oscar__img {
     margin-left: 18vw;
     width: 60%;
@@ -687,6 +700,11 @@ img.burger-menu__logo {
   }
   li {
     padding-top: 1em;
+  }
+}
+@media (max-width: 375px) {
+  #studio h2 {
+    font-size: 2rem;
   }
 }
 @media (max-width: 320px) {
