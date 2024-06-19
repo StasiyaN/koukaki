@@ -5,7 +5,8 @@
 .burger-menu {
   position: fixed;
   width: 100%;//changement 1440px en %
-  height: auto;
+  height: 100vh;
+  //max-height: 1054px;
   background-color: #FFF5E9;
   top: 80px;
   margin: 0 auto;
@@ -18,10 +19,11 @@
 
 .burger-menu__body {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
+  box-sizing: border-box;
   display: flex;
   position: relative;
-  padding: 30px 10px; // to check
+  padding: 2vw 0.7vw; // 30px 10px; // to check
 }
 
 .burger-menu__content {
@@ -31,25 +33,28 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  flex-grow: 1;
 }
 
 
 .burger-menu ul {
   position: relative;
-  top: 9vw; //170px;
-  left: 31vw; //485px;
+  top: 10vw; //170px;
+  left: 34vw; //485px;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   list-style: none;
   background: #FFF5E9; 
 }
 
 
 .burger-menu__text li a {
-  //display: flex;
-  font-size: 4vw;//54px --> in vw
+  display: flex;
+  flex-grow: 1;
+  font-size: 3.375rem; //54px --> in rem
   font-weight: 400;
-  //align-content: center;
+  line-height: 200%;
   text-decoration: none;
   color: #000;
   transition: text-shadow 0.3s ease;
@@ -95,7 +100,7 @@ img.sunflower-flower {
   @include burgerImgPos(216px, 40px, 1039px);
 }
 img.burger-menu__logo {
-  @include burgerImgPos(11vw, 0vw, 42vw);
+  @include burgerImgPos(50%, 0vw, 39vw);
 }
 
 .burger-menu__flower {
@@ -104,5 +109,5 @@ img.burger-menu__logo {
 }
 
 .burger-menu p {
-  margin-top: 80px;
+  margin-top: 18%; // 80px;
 }
