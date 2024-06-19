@@ -638,6 +638,7 @@ img.burger-menu__logo {
     margin-bottom: 0;
     align-items: center;
     justify-content: center;
+    margin-top: 100px;
   }
   img.oscar__img {
     margin-top: 4vw;
@@ -673,12 +674,15 @@ img.burger-menu__logo {
   .swiper-slider img {
     overflow: none;
   }
+  #oscar {
+    margin-top: 250px;
+  }
   .oscar__title {
     font-size: 1.7rem;
   }
   .oscar__flower {
     right: auto;
-    top: -30vw;
+    top: -25vw;
   }
 }
 @media (max-width: 700px) {
@@ -728,7 +732,7 @@ img.burger-menu__logo {
     font-size: 1.5rem;
   }
   .oscar__flower {
-    top: -25vw;
+    top: -30vw;
   }
   .story #characters h3 {
     margin-left: 0;

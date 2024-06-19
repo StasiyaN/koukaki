@@ -66,6 +66,7 @@
         margin-bottom: 0;
         align-items: center;
         justify-content: center;
+        margin-top: 100px;
     }
     
     img.oscar__img {
@@ -109,14 +110,16 @@
      .swiper-slider img {
         overflow: none;
     }
-
+    #oscar {
+        margin-top: 250px;
+    }
     .oscar__title {
         font-size: 1.7rem;
     }
 
     .oscar__flower {
         right: auto;
-        top: -30vw;
+        top: -25vw;
     }
 }
 
@@ -177,8 +180,7 @@
     }
     
     .oscar__flower {
-        top: -25vw;
-        //right: 66vw ;
+        top: -30vw;
     }
     .story #characters h3 {
         margin-left: 0;
