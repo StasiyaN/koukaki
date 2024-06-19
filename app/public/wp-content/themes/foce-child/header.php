@@ -39,7 +39,7 @@
                                 <div class="burger-menu__content">                           
                                     <ul class="burger-menu__text">
                                         <li><a href="#story">Histoire</a></li>
-                                        <li><a href="#characters"">Personnages</a></li>
+                                        <li><a href="#characters">Personnages</a></li>
                                         <li><a href="#place">Lieu</a></li>
                                         <li><a href="#studio">Studio Koukaki</a></li>
                                         <p><a href="#">STUDIO KOUKAKI</a></p>

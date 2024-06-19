@@ -323,12 +323,32 @@
 .burger-menu ul {
   position: relative;
   top: 10vw;
-  left: 34vw;
+  left: 35vw;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   list-style: none;
   background: #FFF5E9;
+}
+
+.burger-menu ul li {
+  opacity: 0;
+  animation: glideUp 2s linear forwards;
+}
+.burger-menu ul li:nth-child(1) {
+  animation-delay: 1s;
+}
+.burger-menu ul li:nth-child(2) {
+  animation-delay: 2s;
+}
+.burger-menu ul li:nth-child(3) {
+  animation-delay: 3s;
+}
+.burger-menu ul li:nth-child(4) {
+  animation-delay: 4s;
+}
+.burger-menu ul li:nth-child(5) {
+  animation-delay: 5s;
 }
 
 .burger-menu__text li a {
@@ -402,7 +422,7 @@ img.sunflower-flower {
 img.burger-menu__logo {
   width: 50%;
   top: 0vw;
-  left: 39vw;
+  left: 41vw;
 }
 
 .burger-menu__flower {
