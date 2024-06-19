@@ -4,8 +4,56 @@
     .menu-icon {
         margin: 20px 60px;
     }
+    //menu
+    img.burger-menu__logo {
+        left: 42vw;
+    }
+    img.hibiscus-flower {
+        left: 900px;
+    }
+    img.sunflower-flower {
+        left: 950px;
+    }
+    img.black {
+        left: 900px;
+    }
+}
+
+@media (max-width: 1040px) {
+    .cloud__big {
+        left: 900px;
+    }
+    .cloud__little {
+        left: 700px;
+    }
+    .oscar__flower {
+        right: 85vw;
+    }
+
+    .story #characters h3 {
+        margin-left: 200px;
+    }
+    //menu
+    img.burger-menu__logo {
+        left: 40vw;
+    }
+    .burger-menu ul {
+        left: 30vw;
+        top: 15vw;
+    }
+    img.black {
+        left: 800px;
+    }
+    img.sunflower-flower {
+        left: 925px;
+    }
+    img.hibiscus-flower {
+        top: 680px;
+        left: 200px;
+    }
 }
 @media (max-width: 1024px) {
+
     .story #characters h3 {
         background-position: center;
         text-align: center;
@@ -25,18 +73,24 @@
     }
     
     .cloud__big {
-        left: 900px;
+        left: 850px;
+    }
+
+    .cloud__little {
+        left: 650px;
     }
     
     .oscar__title  {
-        font-size: 2em;
+        font-size: 1.8em;
     }
     
     //MENU
     img.black {
         left: 800px;
     }
-    
+    img.orange {
+        top: 580px;
+    }
     img.sunflower-flower {
         left: 900px;
     }
@@ -51,25 +105,62 @@
     }
 }
 
-// @media (max-width: 900px) {
-//     .swiper-slider img {
-//         overflow: none;
-//     }
+ @media (max-width: 920px) {
+     .swiper-slider img {
+        overflow: none;
+    }
 
-//     .oscar__title {
-//         font-size: 1.7rem;
-//     }
-// }
+    .oscar__title {
+        font-size: 1.7rem;
+    }
 
-// @media (max-width: 781px) {
-//     #oscar {
-//         margin-bottom: 0;
-//         align-items: center;
-//         justify-content: center;
-//     }
-// }
+    .oscar__flower {
+        right: auto;
+        top: -30vw;
+    }
+}
+
+@media (max-width: 700px) {
+    //menu
+    .burger-menu ul {
+        top: 30vw;
+        left: 22vw;
+    }
+    img.hibiscus-flower {
+        left: 50px;
+    }
+  
+}
+
+ @media (max-width: 782px) {
+
+    #studio h2::before {
+        visibility: hidden;
+    }
+
+    //menu
+    .burger-menu ul {
+        top: 20vw;
+        left: 27vw;
+    }
+    img.violet {
+        display: none;
+    }
+    img.black {
+        left: 700px
+    }
+    img.hibiscus-flower {
+        top: 660px;
+        left: 100px;
+    }
+ }
 
 @media (max-width: 768px) {
+        #oscar {
+        margin-bottom: 0;
+        align-items: center;
+        justify-content: center;
+    }
     .banner img {
         width: 70%;;
     }
@@ -80,30 +171,25 @@
     .cloud__little {
         left: 500px;
     }
-    
-    #studio h2::before {
-        visibility: hidden;
-    }
-    
+
     .oscar__title {
         font-size: 1.5rem;
     }
     
     .oscar__flower {
         top: -25vw;
-        right: 66vw ;
+        //right: 66vw ;
     }
     .story #characters h3 {
         margin-left: 0;
     }
     
     //menu
-    
     .burger-menu ul {
         top: 25vw;
         left: 25vw;
     }
-    img.violet,
+   
     img.red-flower {
         display: none;
     }
@@ -139,11 +225,7 @@
     }
 }
 
-@media (max-width: 600px) {
-    // .burger-menu ul {
-    //     left: 28vw;
-    // }
-}
+
 
 @media (max-width: 550px) {
     .site-title {
@@ -169,24 +251,19 @@
     .menu-icon {
         margin: 15px auto;
     }
-    
     .story #characters{
         margin-top: 5px;
     }
-    
     .clouds {
         visibility: hidden;
     }
-    
     #studio h2 {
         font-size: 2.5rem;
     }
-    
     #oscar {
         align-items: flex-start;
         margin: 3.5vw auto;
     }
-    
     .oscar__article {
         margin-left: 12vw;
     }
@@ -196,7 +273,6 @@
     .oscar__flower {
         z-index: -1;
     }
-    
     img.oscar__img {
         margin-left: 18vw;
         width: 60%;
@@ -204,11 +280,9 @@
     .swiper {
         width: 75%;
     }
-    
     .site-footer {
         padding-top: 12em;
     }
-    
     .site-footer ul {
         display: flex;
         flex-direction: column;
@@ -218,7 +292,6 @@
     li {
         padding-top: 1em;
     }
-    
     //menu 
     img.orange,
     img.orchid-flower {
@@ -228,12 +301,10 @@
         left: 0;
         width: 100%;
     }
-    
     .burger-menu ul {
         left: 0;
         top: 60vw;
     }
-    
     .burger-menu p {
         margin-top: 10%;
     }
@@ -252,7 +323,6 @@
     .burger-menu ul {
         left: 10vw;
     }
-    
     img.burger-menu__logo {
         left: 10vw;
     }
@@ -267,12 +337,9 @@
 
 
 @media (max-width: 320px) {
-    
-    
     #studio h2 {
         font-size: 1.5rem;
     }
-    
     .story #characters h3,
     .story #place h3 {
         font-size: 2rem;
