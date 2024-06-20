@@ -1,20 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log('DOMContentLoaded'); 
-
     //declation de variables banner
     const banner = document.getElementById('banner');
     const videoContainer = banner.querySelector('.banner-video');
     const logo = banner.querySelector('.logo-wrap');
-    //let scrollY = window.scrollY; // Initial scroll position
     let lastScrollY = window.scrollY; 
-    console.log(logo);
     //declarations de variables nuages
     const cloudLittle = document.querySelector('.cloud__little');
     const cloudBig = document.querySelector('.cloud__big');    
     const sectionPlace = document.getElementById('place');
-    
-    
-    console.log(place);
+    //const frontPage = document.getElementById('primary');
     
     //functions
     // Function to handle  entire scroll event
@@ -27,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
             } else {
                 span.classList.remove('animated-header');
             }
-
         });
         parallax();
     }
@@ -41,19 +35,14 @@ document.addEventListener('DOMContentLoaded', function() {
             rect.right <= (window.innerWidth || document.documentElement.clientWidth)
         );
     }
-
     function parallax() {
         const newScrollY = window.scrollY; // Update scroll position
         const movementRatio = newScrollY / window.innerHeight; // Calculate movement ratio
-
-
         videoContainer.style.transform = `translateY(${movementRatio * 80}px)`; // Apply parallax effect with a multiplier
         logo.style.transform = `translateY(${movementRatio * 180}px)`; // Apply parallax effect with a multiplier
     }
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('scroll', function() {
-        //nouvelle fonction
-        //el dans le vp --> mettre en animation
         const sectionOffsetTop = sectionPlace.offsetTop;
         const scrollPosition = window.scrollY || document.documentElement.scrollTop;
         if (scrollPosition >= sectionOffsetTop) {
@@ -67,29 +56,25 @@ document.addEventListener('DOMContentLoaded', function() {
             cloudLittle.style.transform = 'translateX(' + (-movementX) + 'px)';
         }
     });
-    
     //declaration de variables menu
     const menuIcon =  document.querySelector('.menu-icon');
     const burgerMenuContent = document.querySelector('.burger-menu');
     const links = burgerMenuContent.querySelectorAll('li a');
-    
-    
     //burger menu
     menuIcon.addEventListener('click', function () {
         menuIcon.classList.toggle && burgerMenuContent.classList.toggle('active') ;
         document.body.classList.toggle('lock');
-        
+       // frontPage.classList.toggle('lock');
     });
     //liens
     links.forEach(link => {
         link.addEventListener('click', () => {
             menuIcon.classList.remove && burgerMenuContent.classList.remove('active');
             document.body.classList.remove('lock');
+            //frontPage.classList.remove('lock');
         });
-        
         //*********************************************************************** */
         //transition fluide vers les section
-        
         const anchors = document.querySelectorAll('a[href*="#"]');
         anchors.forEach(anchor => {
             anchor.addEventListener('click', event => {
@@ -104,8 +89,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
     });
-    
-    //*******************************************/
-    
-    
 });

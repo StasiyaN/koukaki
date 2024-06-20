@@ -20,7 +20,7 @@ foreach ($characters as $character) {
         <?php foreach ($characters_data as $character) : ?>
             <div class="swiper-slide">
                 <img src="<?php echo $character['image']; ?>" alt="" />
-                <figcaption> <?php echo $character['name']; ?></figcaption>
+                <p> <?php echo $character['name']; ?></p>
             </div>
         <?php endforeach; ?>
     </div>

@@ -456,7 +456,7 @@ img.burger-menu__logo {
 }
 
 .lock {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .main-navigation {
