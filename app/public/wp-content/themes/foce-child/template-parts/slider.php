@@ -7,12 +7,6 @@ $characters = get_posts(array(
 foreach ($characters as $character) {
     $character_name = $character->post_title; // Récupérer le nom du personnage
     $character_image = get_the_post_thumbnail_url($character->ID); // Récupérer l'URL de l'image du personnage
-
-    // Vérifier si l'image est vide et assigner une image par défaut si nécessaire
-    // if (empty($character_image)) {
-    //     $character_image = 'wp-content/themes/foce-child/assets/images/Kawaneko.png';
-    // }
-    
     $characters_data[] = array(
         'name' => $character_name,
         'image' => $character_image,

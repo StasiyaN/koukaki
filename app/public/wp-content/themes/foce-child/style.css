@@ -31,11 +31,11 @@
 @keyframes rotation {
   0% {
     transform: rotate(0deg);
-    transform-origin: center center; /* Set the transform origin 100% the center of the image */
+    transform-origin: center center;
   }
   100% {
     transform: rotate(360deg);
-    transform-origin: center center; /* Maintain the same transform origin for the end of the animation */
+    transform-origin: center center;
   }
 }
 @keyframes clouds {

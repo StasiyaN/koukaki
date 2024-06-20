@@ -288,7 +288,7 @@ INSERT INTO `wp_options` VALUES (1087,'ai1wm_secret_key','vSlQNULsBTyj','yes');
 INSERT INTO `wp_options` VALUES (1088,'ai1wm_backups_labels','a:0:{}','yes');
 INSERT INTO `wp_options` VALUES (1089,'ai1wm_sites_links','a:0:{}','yes');
 INSERT INTO `wp_options` VALUES (1090,'ai1wm_backups_path','C:\\Users\\asian\\Local Sites\\koukaki\\app\\public/wp-content\\ai1wm-backups','yes');
-INSERT INTO `wp_options` VALUES (1091,'_transient_doing_cron','1718640615.0226769447326660156250','yes');
+INSERT INTO `wp_options` VALUES (1091,'_transient_doing_cron','1718803223.1316990852355957031250','yes');
 INSERT INTO `wp_options` VALUES (1092,'ai1wm_status','a:3:{s:4:\"type\";s:4:\"done\";s:5:\"title\";s:35:\"Votre site a bien été importé !\";s:7:\"message\";s:408:\"» <a class=\"ai1wm-no-underline\" href=\"http://koukaki.local/wp-admin/options-permalink.php#submit\" target=\"_blank\">Enregistrer la structure des permaliens</a> (nouvelle fenêtre).<br />» <a class=\"ai1wm-no-underline\" href=\"https://wordpress.org/support/view/plugin-reviews/all-in-one-wp-migration?rate=5#postform\" target=\"_blank\">Donner votre avis sur l’extension</a> (facultatif – nouvelle fenêtre).\";}','yes');
 INSERT INTO `wp_options` VALUES (1093,'swift_performance_plugin_organizer','a:0:{}','yes');
 INSERT INTO `wp_options` VALUES (1094,'jetpack_active_modules','a:0:{}','yes');
@@ -320,7 +320,7 @@ INSERT INTO `wp_options` VALUES (1141,'_transient_dash_v2_bd94b8f41e74bae2f4dc72
 INSERT INTO `wp_options` VALUES (1142,'_site_transient_ai1wm_last_check_for_updates','1716827248','no');
 INSERT INTO `wp_options` VALUES (1145,'_site_transient_timeout_theme_roots','1718431958','no');
 INSERT INTO `wp_options` VALUES (1146,'_site_transient_theme_roots','a:2:{s:10:\"foce-child\";s:7:\"/themes\";s:4:\"foce\";s:7:\"/themes\";}','no');
-INSERT INTO `wp_options` VALUES (1147,'_site_transient_update_core','O:8:\"stdClass\":4:{s:7:\"updates\";a:1:{i:0;O:8:\"stdClass\":10:{s:8:\"response\";s:6:\"latest\";s:8:\"download\";s:65:\"https://downloads.wordpress.org/release/fr_FR/wordpress-6.5.4.zip\";s:6:\"locale\";s:5:\"fr_FR\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:65:\"https://downloads.wordpress.org/release/fr_FR/wordpress-6.5.4.zip\";s:10:\"no_content\";s:0:\"\";s:11:\"new_bundled\";s:0:\"\";s:7:\"partial\";s:0:\"\";s:8:\"rollback\";s:0:\"\";}s:7:\"current\";s:5:\"6.5.4\";s:7:\"version\";s:5:\"6.5.4\";s:11:\"php_version\";s:5:\"7.0.0\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"6.4\";s:15:\"partial_version\";s:0:\"\";}}s:12:\"last_checked\";i:1718639176;s:15:\"version_checked\";s:5:\"6.5.4\";s:12:\"translations\";a:0:{}}','no');
+INSERT INTO `wp_options` VALUES (1147,'_site_transient_update_core','O:8:\"stdClass\":4:{s:7:\"updates\";a:1:{i:0;O:8:\"stdClass\":10:{s:8:\"response\";s:6:\"latest\";s:8:\"download\";s:65:\"https://downloads.wordpress.org/release/fr_FR/wordpress-6.5.4.zip\";s:6:\"locale\";s:5:\"fr_FR\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:65:\"https://downloads.wordpress.org/release/fr_FR/wordpress-6.5.4.zip\";s:10:\"no_content\";s:0:\"\";s:11:\"new_bundled\";s:0:\"\";s:7:\"partial\";s:0:\"\";s:8:\"rollback\";s:0:\"\";}s:7:\"current\";s:5:\"6.5.4\";s:7:\"version\";s:5:\"6.5.4\";s:11:\"php_version\";s:5:\"7.0.0\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"6.4\";s:15:\"partial_version\";s:0:\"\";}}s:12:\"last_checked\";i:1718780361;s:15:\"version_checked\";s:5:\"6.5.4\";s:12:\"translations\";a:0:{}}','no');
 /*!40000 ALTER TABLE `wp_options` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -702,4 +702,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-06-17 21:41:43
+-- Dump completed on 2024-06-19 15:36:17

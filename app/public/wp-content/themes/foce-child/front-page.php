@@ -16,34 +16,26 @@ get_header();
                     <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?>" class="logo-img" alt="logo Fleurs d'oranger & chats errants">
                 </div> 
             </div>
-
-
-
 <section id="story" class="story">
     <h2><span>L'histoire</span></h2>
         <article id="story__article" class="story__article">
             <p><?php echo get_theme_mod('story'); ?></p>
         </article>
-        <article id="characters">
-        <div class="main-character swiper-section">
-            <h3><span>Les</span> <span>personnages</span></h3>
-            <?php get_template_part('template-parts/slider');?>
-            </div>
-        </article>
-   
+            <article id="characters">
+            <div class="main-character swiper-section">
+                <h3><span>Les</span> <span>personnages</span></h3>
+                <?php get_template_part('template-parts/slider');?>
+                </div>
+            </article>
     <article id="place">
         <div>
             <h3><span>Le</span> <span>Lieu</span></h3>
                 <p><?php echo get_theme_mod('place'); ?></p>
-              
                     <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/little_cloud.png'; ?>" alt="petite nuage" class="cloud__little clouds">
                     <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/big_cloud.png'; ?>" alt="grande nuage" class="cloud__big clouds">
-                
         </div>
     </article>
 </section>
-
-
 <section id="studio">
     <h2><span>Studio</span> <span> Koukaki</span></h2>
         <div>

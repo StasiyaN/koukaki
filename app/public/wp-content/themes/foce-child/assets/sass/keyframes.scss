@@ -34,23 +34,20 @@
 @keyframes rotation {
   0% {     
     transform: rotate(0deg);
-    transform-origin: center center; /* Set the transform origin 100% the center of the image */
+    transform-origin: center center; 
   }
-  
   100% {
     transform: rotate(360deg);
-    transform-origin: center center; /* Maintain the same transform origin for the end of the animation */
+    transform-origin: center center; 
   }
 }
 
 @keyframes clouds {
   0% {
     transform: translateX(0px);
-
   }
   50% {
     transform: translateX(-150px);
-
   }
   100% {
     transform: translateX(-300px);
@@ -73,11 +70,9 @@
 0% {
   transform: translate(-50%, -100%) rotate(0deg);
 }
-
 50% {
   transform: translate(-50%, -90%) rotate(-5deg);
 }
-
 100% {
   transform: translate(-50%, -95%) rotate(0deg);
 }
@@ -98,11 +93,9 @@
   0% {
     transform: translate(-50%, -100%) rotate(-0.2deg);
   }
-  
   50% {
     transform: translate(-49%, -97%) rotate(0.1deg);
   }
-  
   100% {
     transform: translate(-50%, -98%) rotate(-0.2deg);
   }
