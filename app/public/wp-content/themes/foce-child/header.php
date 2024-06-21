@@ -41,8 +41,9 @@
                                     <li><a href="#characters">Personnages</a></li>
                                     <li><a href="#place">Lieu</a></li>
                                     <li><a href="#studio">Studio Koukaki</a></li>
-                                    <li><p><a href="#">STUDIO KOUKAKI</a></p></li>
+                                    <p><a href="#">STUDIO KOUKAKI</a></p>
                                     </ul>
+                                    
                                    
                                     <!-- logo img -->
                                         <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/burger-menu/logo-burger-menu.png';?>" alt="logo du site" class="burger-menu__logo">

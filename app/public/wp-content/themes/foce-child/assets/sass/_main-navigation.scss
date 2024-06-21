@@ -1,6 +1,9 @@
-.lock {
-    overflow-y: hidden;
+body.lock {
+    overflow: hidden;
+    max-height: 100vh;
 }
+
+
 
 //NAVBAR
 .main-navigation {
@@ -60,15 +63,16 @@
 .menu-icon::after{
     bottom: 0;
 }
+
 //class active for transformation
-.menu-icon.active span {
+.menu-icon.open span {
     transform: scale(0);
 }
-.menu-icon.active::before {
+.menu-icon.open::before {
     top: 50%;
     transform: rotate(-45deg) translate(0,-50%);
 }
-.menu-icon.active::after {
+.menu-icon.open::after {
     bottom: 50%;
     transform: rotate(45deg) translate(0,50%);
 }

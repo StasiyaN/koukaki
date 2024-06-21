@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         parallax();
     }
+
     // Function to check if an element is in the viewport
     function isElementInViewport(el) {
         const rect = el.getBoundingClientRect();
@@ -35,13 +36,16 @@ document.addEventListener('DOMContentLoaded', function() {
             rect.right <= (window.innerWidth || document.documentElement.clientWidth)
         );
     }
+
     function parallax() {
         const newScrollY = window.scrollY; // Update scroll position
         const movementRatio = newScrollY / window.innerHeight; // Calculate movement ratio
         videoContainer.style.transform = `translateY(${movementRatio * 80}px)`; // Apply parallax effect with a multiplier
         logo.style.transform = `translateY(${movementRatio * 180}px)`; // Apply parallax effect with a multiplier
     }
+
     window.addEventListener('scroll', handleScroll);
+
     window.addEventListener('scroll', function() {
         const sectionOffsetTop = sectionPlace.offsetTop;
         const scrollPosition = window.scrollY || document.documentElement.scrollTop;
@@ -56,22 +60,27 @@ document.addEventListener('DOMContentLoaded', function() {
             cloudLittle.style.transform = 'translateX(' + (-movementX) + 'px)';
         }
     });
+
+
+    //MENU JS
     //declaration de variables menu
     const menuIcon =  document.querySelector('.menu-icon');
     const burgerMenuContent = document.querySelector('.burger-menu');
     const links = burgerMenuContent.querySelectorAll('li a');
+
     //burger menu
-    menuIcon.addEventListener('click', function () {
-        menuIcon.classList.toggle && burgerMenuContent.classList.toggle('active') ;
+    menuIcon.addEventListener('click', function() {
+        menuIcon.classList.toggle('open');
+        burgerMenuContent.classList.toggle('active');
         document.body.classList.toggle('lock');
-       // frontPage.classList.toggle('lock');
     });
+
     //liens
     links.forEach(link => {
         link.addEventListener('click', () => {
-            menuIcon.classList.remove && burgerMenuContent.classList.remove('active');
+            menuIcon.classList.remove('open');
+            burgerMenuContent.classList.remove('active');
             document.body.classList.remove('lock');
-            //frontPage.classList.remove('lock');
         });
         //*********************************************************************** */
         //transition fluide vers les section

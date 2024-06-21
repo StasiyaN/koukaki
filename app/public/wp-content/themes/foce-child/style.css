@@ -333,22 +333,22 @@
 
 .burger-menu ul li {
   opacity: 0;
-  animation: glideUp 2s linear forwards;
+  animation: glideUp 1s linear forwards;
 }
 .burger-menu ul li:nth-child(1) {
-  animation-delay: 1s;
+  animation-delay: 0.7s;
 }
 .burger-menu ul li:nth-child(2) {
-  animation-delay: 2s;
+  animation-delay: 0.9s;
 }
 .burger-menu ul li:nth-child(3) {
-  animation-delay: 3s;
+  animation-delay: 1.1s;
 }
 .burger-menu ul li:nth-child(4) {
-  animation-delay: 4s;
+  animation-delay: 1.3s;
 }
 .burger-menu ul li:nth-child(5) {
-  animation-delay: 5s;
+  animation-delay: 1.5s;
 }
 
 .burger-menu__text li a {
@@ -432,6 +432,7 @@ img.burger-menu__logo {
 
 .burger-menu p {
   margin-top: 18%;
+  font-size: 14px;
 }
 
 .story #place {
@@ -455,8 +456,9 @@ img.burger-menu__logo {
   transition: translateX(0) left 10s ease-in-out;
 }
 
-.lock {
-  overflow-y: hidden;
+body.lock {
+  overflow: hidden;
+  max-height: 100vh;
 }
 
 .main-navigation {
@@ -519,16 +521,16 @@ img.burger-menu__logo {
   bottom: 0;
 }
 
-.menu-icon.active span {
+.menu-icon.open span {
   transform: scale(0);
 }
 
-.menu-icon.active::before {
+.menu-icon.open::before {
   top: 50%;
   transform: rotate(-45deg) translate(0, -50%);
 }
 
-.menu-icon.active::after {
+.menu-icon.open::after {
   bottom: 50%;
   transform: rotate(45deg) translate(0, 50%);
 }
