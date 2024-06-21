@@ -16,6 +16,10 @@
     img.black {
         left: 900px;
     }
+    .burger-menu p {
+        top: 45vw;
+        left: 46vw;
+    }
 }
 
 @media (max-width: 1040px) {
@@ -49,6 +53,10 @@
     img.hibiscus-flower {
         top: 680px;
         left: 200px;
+    }
+    .burger-menu p {
+        top: 55vw;
+        left: 44vw;
     }
 }
 
@@ -98,6 +106,10 @@
         top: 710px;
         left: 200px;
     }
+    .burger-menu p {
+        top: 55vw;
+        left: 43vw;
+    }
 }
 
 @media (max-width: 920px) {
@@ -115,6 +127,9 @@
     .oscar__flower {
         right: auto;
         top: -25vw;
+    }
+    .burger-menu p {
+        top: 65vw;
     }
 }
 
@@ -148,6 +163,9 @@
     img.hibiscus-flower {
         top: 660px;
         left: 100px;
+    }
+    .burger-menu p {
+        top: 75vw;
     }
 }
 
@@ -195,6 +213,9 @@
     img.hibiscus-flower {
         top: 710px;
         left: 90px;
+    }
+    .burger-menu p {
+        top: 80vw;
     }
 }
 
@@ -273,17 +294,15 @@
         align-items: center;
         justify-content: center;
     }
-    li {
-        padding-top: 1em;
-    }
+
     //menu 
     img.orange,
     img.orchid-flower {
         display: none;
     }
     img.burger-menu__logo {
-        left: 0;
-        width: 100%;
+        left: 15vw;
+        width: 70%;
     }
     .burger-menu ul {
         left: 0;
@@ -297,6 +316,10 @@
         top: 780px;
         left: -0.1px;
     }
+    .burger-menu p {
+        top: 165vw;
+        left: 40vw;
+    }
 }
 
 @media (max-width: 375px) {
@@ -308,14 +331,18 @@
         left: 10vw;
     }
     img.burger-menu__logo {
-        left: 10vw;
+        width: 100%;
     }
     img.hibiscus-flower {
-        left: 10vw;
-        top: 180vw;
+        left: 15vw;
+        top: 165vw;
     }
     .burger-menu ul li a {
         font-size: 2.3rem;
+    }
+    .burger-menu p {
+        top: 140vw;
+        left: 35vw;
     }
 }
 
@@ -346,5 +373,9 @@
     img.hibiscus-flower {
         left: 5vw;
         top: 180vw;
+    }
+    .burger-menu p {
+        top: 150vw;
+        left: 30vw;
     }
 }

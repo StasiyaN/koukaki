@@ -103,6 +103,76 @@
   margin: 0 auto;
 }
 
+.story #place {
+  background-image: url("../foce-child/assets/images/Studio_Koukaki-image_place.png");
+  position: relative;
+}
+
+.cloud__little {
+  position: absolute;
+  left: 793px;
+  top: 248px;
+  filter: blur(20px);
+  transition: translateX(0) left 10s ease-in-out;
+}
+
+.cloud__big {
+  position: absolute;
+  left: 1031px;
+  top: 65px;
+  filter: blur(20px);
+  transition: translateX(0) left 10s ease-in-out;
+}
+
+.site-footer::before, .site-footer::after {
+  display: none;
+}
+
+.violet {
+  animation: cat1 2s ease-in-out infinite alternate;
+}
+@keyframes cat1 {
+  0% {
+    transform: translate(-50%, -100%) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, -90%) rotate(5deg);
+  }
+  100% {
+    transform: translate(-50%, -95%) rotate(0deg);
+  }
+}
+
+.orange {
+  animation: cat2 3s ease-in-out infinite alternate;
+}
+@keyframes cat2 {
+  0% {
+    transform: translate(-50%, -100%) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, -80%) rotate(-13deg);
+  }
+  100% {
+    transform: translate(-50%, -90%) rotate(0deg);
+  }
+}
+
+.black {
+  animation: cat3 2s ease-in-out infinite alternate;
+}
+@keyframes cat3 {
+  0% {
+    transform: translate(-50%, -100%) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, -85%) rotate(8deg);
+  }
+  100% {
+    transform: translate(-50%, -95%) rotate(0deg);
+  }
+}
+
 .story {
   animation: fadeInUp 1s ease-in-out 1;
 }
@@ -130,6 +200,28 @@
 }
 #characters h3 {
   margin-bottom: 0px;
+}
+
+.animated-header {
+  display: inline-flex;
+  animation: glideUp 0.2s ease-in-out;
+}
+.animated-header:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.animated-header:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.story h2::after,
+.story__article::after,
+#studio h2::before,
+#studio h2::after,
+#studio div::after,
+.oscar__title::before,
+.site-footer ul::after {
+  line-height: 0;
+  animation: rotation 10s linear infinite;
 }
 
 #oscar {
@@ -220,32 +312,6 @@
 
 .fallback-image {
   display: none;
-}
-
-.site-footer::before, .site-footer::after {
-  display: none;
-}
-
-.story h2::after,
-.story__article::after,
-#studio h2::before,
-#studio h2::after,
-#studio div::after,
-.oscar__title::before,
-.site-footer ul::after {
-  line-height: 0;
-  animation: rotation 10s linear infinite;
-}
-
-.animated-header {
-  display: inline-flex;
-  animation: glideUp 0.2s ease-in-out;
-}
-.animated-header:nth-child(1) {
-  animation-delay: 0.2s;
-}
-.animated-header:nth-child(2) {
-  animation-delay: 0.4s;
 }
 
 .story #characters div {
@@ -431,29 +497,10 @@ img.burger-menu__logo {
 }
 
 .burger-menu p {
-  margin-top: 18%;
-  font-size: 14px;
-}
-
-.story #place {
-  background-image: url("../foce-child/assets/images/Studio_Koukaki-image_place.png");
-  position: relative;
-}
-
-.cloud__little {
   position: absolute;
-  left: 793px;
-  top: 248px;
-  filter: blur(20px);
-  transition: translateX(0) left 10s ease-in-out;
-}
-
-.cloud__big {
-  position: absolute;
-  left: 1031px;
-  top: 65px;
-  filter: blur(20px);
-  transition: translateX(0) left 10s ease-in-out;
+  top: 40vw;
+  left: 45vw;
+  z-index: 4;
 }
 
 body.lock {
@@ -535,51 +582,6 @@ body.lock {
   transform: rotate(45deg) translate(0, 50%);
 }
 
-.violet {
-  animation: cat1 2s ease-in-out infinite alternate;
-}
-@keyframes cat1 {
-  0% {
-    transform: translate(-50%, -100%) rotate(0deg);
-  }
-  50% {
-    transform: translate(-50%, -90%) rotate(5deg);
-  }
-  100% {
-    transform: translate(-50%, -95%) rotate(0deg);
-  }
-}
-
-.orange {
-  animation: cat2 3s ease-in-out infinite alternate;
-}
-@keyframes cat2 {
-  0% {
-    transform: translate(-50%, -100%) rotate(0deg);
-  }
-  50% {
-    transform: translate(-50%, -80%) rotate(-13deg);
-  }
-  100% {
-    transform: translate(-50%, -90%) rotate(0deg);
-  }
-}
-
-.black {
-  animation: cat3 2s ease-in-out infinite alternate;
-}
-@keyframes cat3 {
-  0% {
-    transform: translate(-50%, -100%) rotate(0deg);
-  }
-  50% {
-    transform: translate(-50%, -85%) rotate(8deg);
-  }
-  100% {
-    transform: translate(-50%, -95%) rotate(0deg);
-  }
-}
-
 @media (max-width: 1192px) {
   .menu-icon {
     margin: 20px 60px;
@@ -595,6 +597,10 @@ body.lock {
   }
   img.black {
     left: 900px;
+  }
+  .burger-menu p {
+    top: 45vw;
+    left: 46vw;
   }
 }
 @media (max-width: 1040px) {
@@ -626,6 +632,10 @@ body.lock {
   img.hibiscus-flower {
     top: 680px;
     left: 200px;
+  }
+  .burger-menu p {
+    top: 55vw;
+    left: 44vw;
   }
 }
 @media (max-width: 1024px) {
@@ -671,6 +681,10 @@ body.lock {
     top: 710px;
     left: 200px;
   }
+  .burger-menu p {
+    top: 55vw;
+    left: 43vw;
+  }
 }
 @media (max-width: 920px) {
   .swiper-slider img {
@@ -685,6 +699,9 @@ body.lock {
   .oscar__flower {
     right: auto;
     top: -25vw;
+  }
+  .burger-menu p {
+    top: 65vw;
   }
 }
 @media (max-width: 700px) {
@@ -713,6 +730,9 @@ body.lock {
   img.hibiscus-flower {
     top: 660px;
     left: 100px;
+  }
+  .burger-menu p {
+    top: 75vw;
   }
 }
 @media (max-width: 768px) {
@@ -756,6 +776,9 @@ body.lock {
   img.hibiscus-flower {
     top: 710px;
     left: 90px;
+  }
+  .burger-menu p {
+    top: 80vw;
   }
 }
 @media (max-width: 666px) {
@@ -830,16 +853,13 @@ body.lock {
     align-items: center;
     justify-content: center;
   }
-  li {
-    padding-top: 1em;
-  }
   img.orange,
   img.orchid-flower {
     display: none;
   }
   img.burger-menu__logo {
-    left: 0;
-    width: 100%;
+    left: 15vw;
+    width: 70%;
   }
   .burger-menu ul {
     left: 0;
@@ -853,6 +873,10 @@ body.lock {
     top: 780px;
     left: -0.1px;
   }
+  .burger-menu p {
+    top: 165vw;
+    left: 40vw;
+  }
 }
 @media (max-width: 375px) {
   #studio h2 {
@@ -862,14 +886,18 @@ body.lock {
     left: 10vw;
   }
   img.burger-menu__logo {
-    left: 10vw;
+    width: 100%;
   }
   img.hibiscus-flower {
-    left: 10vw;
-    top: 180vw;
+    left: 15vw;
+    top: 165vw;
   }
   .burger-menu ul li a {
     font-size: 2.3rem;
+  }
+  .burger-menu p {
+    top: 140vw;
+    left: 35vw;
   }
 }
 @media (max-width: 320px) {
@@ -898,6 +926,10 @@ body.lock {
   img.hibiscus-flower {
     left: 5vw;
     top: 180vw;
+  }
+  .burger-menu p {
+    top: 150vw;
+    left: 30vw;
   }
 }
 

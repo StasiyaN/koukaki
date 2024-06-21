@@ -120,6 +120,8 @@ img.burger-menu__logo {
 }
 
 .burger-menu p {
-  margin-top: 18%; // 80px;
-  font-size: 14px;
+  position: absolute;
+  top: 40vw;
+  left: 45vw;
+  z-index: 4;
 }

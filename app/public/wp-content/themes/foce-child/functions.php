@@ -9,6 +9,9 @@ function theme_enqueue_styles() {
 
     // Enqueue child script
     wp_enqueue_script( 'child-script', get_stylesheet_directory_uri() . '/assets/js/main.js', array('jquery'), null, true );
+    // Enqueue menu js script
+    wp_enqueue_script( 'menu-script', get_stylesheet_directory_uri() . '/assets/js/menu.js', array('jquery'), null, true );
+    
     
     //swiper slider
     wp_enqueue_style('swiper-slider-css', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css', array(), true);

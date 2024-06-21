@@ -8,3 +8,35 @@
     white-space: nowrap;
     margin: 0 auto;
 }
+
+//les nuages
+.story #place {
+    background-image: url("../foce-child/assets/images/Studio_Koukaki-image_place.png");
+    position: relative;
+  }
+  
+  .cloud__little {
+    position: absolute;
+    left: 793px;
+    top: 248px;
+    filter: blur(20px);
+    transition: translateX(0) left 10s ease-in-out;
+  }
+  
+  .cloud__big {
+    position: absolute;
+    left: 1031px;
+    top: 65px;
+    filter: blur(20px);
+    transition: translateX(0) left 10s ease-in-out;
+  }
+
+//footer 
+//modification par rapport du oscar section
+.site-footer {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+  

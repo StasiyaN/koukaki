@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const cloudLittle = document.querySelector('.cloud__little');
     const cloudBig = document.querySelector('.cloud__big');    
     const sectionPlace = document.getElementById('place');
-    //const frontPage = document.getElementById('primary');
     
     //functions
     // Function to handle  entire scroll event
@@ -62,40 +61,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
-    //MENU JS
-    //declaration de variables menu
-    const menuIcon =  document.querySelector('.menu-icon');
-    const burgerMenuContent = document.querySelector('.burger-menu');
-    const links = burgerMenuContent.querySelectorAll('li a');
-
-    //burger menu
-    menuIcon.addEventListener('click', function() {
-        menuIcon.classList.toggle('open');
-        burgerMenuContent.classList.toggle('active');
-        document.body.classList.toggle('lock');
-    });
-
-    //liens
-    links.forEach(link => {
-        link.addEventListener('click', () => {
-            menuIcon.classList.remove('open');
-            burgerMenuContent.classList.remove('active');
-            document.body.classList.remove('lock');
-        });
-        //*********************************************************************** */
-        //transition fluide vers les section
-        const anchors = document.querySelectorAll('a[href*="#"]');
-        anchors.forEach(anchor => {
-            anchor.addEventListener('click', event => {
-                event.preventDefault(); //cancellin defaut behaviour of the link redirection
-                //ne pas utiliser scrollIntoView creer propre 
-                const blockID = anchor.getAttribute('href').substring(1);//getting rid of the #
-                this.getElementById(blockID).scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            });
-        });
-        
-    });
 });
