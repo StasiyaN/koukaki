@@ -59,6 +59,4 @@ document.addEventListener('DOMContentLoaded', function() {
             cloudLittle.style.transform = 'translateX(' + (-movementX) + 'px)';
         }
     });
-
-
 });
