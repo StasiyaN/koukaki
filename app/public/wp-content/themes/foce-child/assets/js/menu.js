@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    //MENU JS
     //declaration de variables menu
     const menuIcon =  document.querySelector('.menu-icon');
     const burgerMenuContent = document.querySelector('.burger-menu');
