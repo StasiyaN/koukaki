@@ -20,7 +20,8 @@
     left: 793px;
     top: 248px;
     filter: blur(20px);
-    transition: translateX(0) left 10s ease-in-out;
+    transition: left 10s ease-in-out;
+    transform: translateX(0);
   }
   
   .cloud__big {
@@ -28,7 +29,8 @@
     left: 1031px;
     top: 65px;
     filter: blur(20px);
-    transition: translateX(0) left 10s ease-in-out;
+    transition: left 10s ease-in-out;
+    transform:  translateX(0);
   }
 
 //footer 

@@ -16,7 +16,6 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
 	<?php wp_head(); ?>
 </head>
 
@@ -43,8 +42,7 @@
                                     <li><a href="#studio">Studio Koukaki</a></li>
                                     </ul>
                                     <p><a href="#">STUDIO KOUKAKI</a></p>
-                                    
-                                   
+
                                     <!-- logo img -->
                                         <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/burger-menu/logo-burger-menu.png';?>" alt="logo du site" class="burger-menu__logo">
                                         <!-- images theme enfant -->
@@ -61,7 +59,4 @@
                         </div>
                     </div>
         </nav>
-       
-          
-		
 	</header><!-- #masthead -->

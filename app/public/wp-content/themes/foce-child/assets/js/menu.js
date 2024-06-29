@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    
     //MENU JS
     //declaration de variables menu
     const menuIcon =  document.querySelector('.menu-icon');
@@ -26,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
         anchors.forEach(anchor => {
             anchor.addEventListener('click', event => {
                 event.preventDefault(); //cancellin defaut behaviour of the link redirection
-                //ne pas utiliser scrollIntoView creer propre 
                 const blockID = anchor.getAttribute('href').substring(1);//getting rid of the #
                 this.getElementById(blockID).scrollIntoView({
                     behavior: 'smooth',

@@ -115,7 +115,7 @@
 @media (max-width: 920px) {
     //slider
     .swiper-slider img {
-        overflow: none;
+        overflow: hidden;
     }
     //front page
     #oscar {
@@ -230,6 +230,31 @@
     #oscar__article {
         width: 80vw;
     }
+
+    //menu
+    img.burger-menu__logo {
+        width: 40vw;
+        left: 30vw;
+    }
+
+    .burger-menu ul {
+        left: 20vw;
+    }
+}
+
+@media (max-width: 600px) {
+    //menu
+    .burger-menu ul {
+        left: 15vw;
+    }
+    .burger-menu p {
+        top: 90vw;
+        left: 42vw;
+    }
+    img.hibiscus-flower {
+        left: 25px;
+    }
+
 }
 
 @media (max-width: 550px) {
@@ -247,7 +272,16 @@
         margin: 0 auto;
         
     }
+    //menu
+    .burger-menu ul {
+        left: 10vw;
+    }
+    .burger-menu p {
+        top: 110vw;
+    }
+
 }
+
 
 @media (max-width: 425px) {
     .banner img {
